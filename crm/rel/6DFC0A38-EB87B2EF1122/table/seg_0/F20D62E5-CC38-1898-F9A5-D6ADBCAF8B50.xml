@@ -1,15 +1,24 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F20D62E5-CC38-1898-F9A5-D6ADBCAF8B50" name="ambientes">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F20D62E5-CC38-1898-F9A5-D6ADBCAF8B50" name="tipos_registros">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<notes><![CDATA[Tabla para guardar los tipos de registros
+
+Conexiones
+
+Arquitectura
+
+Contratos
+]]></notes>
 <ownerDesignName>crm</ownerDesignName>
 <importedID>4B176F63-F65E-38BF-0206-A0931233B46A</importedID>
+<ordsAlias>tipos_ambientes</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_ambiente" id="2620F060-A0A7-A3FC-CB34-082D7EE90D73">
+<Column name="id_tipo_registro" id="2620F060-A0A7-A3FC-CB34-082D7EE90D73">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -24,7 +33,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ambiente" id="B8CB4BD8-75FD-2C0C-AC15-F61997B69049">
+<Column name="tipo_registro" id="B8CB4BD8-75FD-2C0C-AC15-F61997B69049">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -88,7 +97,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>16</dataTypePrecision>
 <domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="360CD707-2950-AB31-53CE-762BAADB8E64" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
@@ -119,7 +128,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>16</dataTypePrecision>
 <domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="2A799F58-1E06-267D-45A6-C951F4BB8CE6" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
@@ -127,7 +136,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3ADCBA5D-B754-F2E3-0974-18ADC9DF791C" name="ambientes_pk">
+<ind_PK_UK id="3ADCBA5D-B754-F2E3-0974-18ADC9DF791C" name="tipos_registros_pk">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -140,7 +149,7 @@
 <colUsage columnID="2620F060-A0A7-A3FC-CB34-082D7EE90D73"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2E6CA5C4-1C5F-0C38-AB2E-360E0280EEDB" name="ambientes__UN">
+<ind_PK_UK id="2E6CA5C4-1C5F-0C38-AB2E-360E0280EEDB" name="tipos_registros__UN">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:11:02 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
@@ -150,7 +159,7 @@
 <colUsage columnID="B8CB4BD8-75FD-2C0C-AC15-F61997B69049"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="622ED266-7610-7EAE-7789-210CAA8F03D1" name="ambientes_usuarios_FK">
+<ind_PK_UK id="622ED266-7610-7EAE-7789-210CAA8F03D1" name="tipos_registros_usuarios_FK">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:10:19 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
@@ -160,7 +169,7 @@
 <colUsage columnID="E367C66E-55D9-6E88-DE4B-A39FA33E0092"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8014CF75-0EE5-289B-8690-4080EA4FCA07" name="ambientes_usuarios_FKv1">
+<ind_PK_UK id="8014CF75-0EE5-289B-8690-4080EA4FCA07" name="tipos_registros_usuarios_FKv1">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:10:27 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>

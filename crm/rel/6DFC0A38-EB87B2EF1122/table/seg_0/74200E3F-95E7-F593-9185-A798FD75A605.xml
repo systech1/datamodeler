@@ -1,15 +1,42 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74200E3F-95E7-F593-9185-A798FD75A605" name="personas_conexiones">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74200E3F-95E7-F593-9185-A798FD75A605" name="registros_archivos">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<notes><![CDATA[Tabla para guardar los  registros_archivos
+
+Tipo de Registros : Conexiones
+Persona : ROLDAN
+registro : CONEXION
+secuencia : 1
+archivo  : archivo_claves.pem
+
+Persona : ROLDAN
+registro  : SANDBOX
+texto     : 
+archivo
+
+Tipo de Registro : 
+
+Pesona : ROLDAN
+Registro : Versiones Base
+
+Persona : ROLDAN
+registro : SAMSONITE
+
+Tipo de Registro : Contratos
+
+Persona : ROLDAN
+registro : CONTRATO
+
+]]></notes>
 <ownerDesignName>crm</ownerDesignName>
 <importedID>C23E6AF2-0CD6-5D81-2421-B5B421B0F59D</importedID>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_persona_conexion" id="F0792AA1-D2FA-27D8-5531-4E1CAC6CCF0C">
+<Column name="id_registro_archivo" id="F0792AA1-D2FA-27D8-5531-4E1CAC6CCF0C">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -24,7 +51,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_persona_ambiente" id="9FDA2449-C311-BABC-DF46-B3C3E1049B1B">
+<Column name="id_registro" id="9FDA2449-C311-BABC-DF46-B3C3E1049B1B">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -37,8 +64,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3BB21513-5626-C03F-9F88-3ECF01F3E943" referredColumn="832746EE-6467-E51E-4E8F-48B5D20238AC"/>
+<colAssociation fkAssociation="6E57E615-7A5C-AB78-AA59-2C06394906D4" referredColumn="832746EE-6467-E51E-4E8F-48B5D20238AC"/>
 </associations>
+</Column>
+<Column name="secuencia" id="3DAAB43C-B0AE-8158-E7A5-A5CF00C1D896">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-26 00:37:51 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="archivo" id="57C0A832-8F7D-5EFA-1D30-E9D415D726DF">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
@@ -53,7 +91,7 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="activo" id="8DAECE8B-3635-52D8-8C9C-B912F8D493FA">
+<Column name="texto" id="8DAECE8B-3635-52D8-8C9C-B912F8D493FA">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -62,7 +100,7 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT040</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -91,7 +129,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>16</dataTypePrecision>
 <domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="93040835-2B90-C4BF-266D-B91C5F2EEDA5" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
@@ -122,7 +160,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>16</dataTypePrecision>
 <domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="92ED087D-795A-B2E7-CC09-FE7C435E41D4" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
@@ -130,7 +168,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7E41ECC7-847B-7C92-225C-63EB61709269" name="personas_conexiones_pk">
+<ind_PK_UK id="7E41ECC7-847B-7C92-225C-63EB61709269" name="registros_archivos_pk">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -143,7 +181,18 @@
 <colUsage columnID="F0792AA1-D2FA-27D8-5531-4E1CAC6CCF0C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E37CDC95-98A0-9604-F748-88783426587B" name="personas_conexiones_usuarios_FK">
+<ind_PK_UK id="EC61CB06-3D89-F0FC-3EA7-9A6F899218DA" name="registros_archivos__UN">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-26 00:25:48 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FDA2449-C311-BABC-DF46-B3C3E1049B1B"/>
+<colUsage columnID="3DAAB43C-B0AE-8158-E7A5-A5CF00C1D896"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E37CDC95-98A0-9604-F748-88783426587B" name="registros_archivos_usuarios_FK">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:23:34 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
@@ -153,7 +202,7 @@
 <colUsage columnID="1E4E3C6A-CBB8-6522-5F19-D8C982E08E2C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E1115741-7D1B-B566-7819-07372A2410A0" name="personas_conexiones_usuarios_FKv1">
+<ind_PK_UK id="E1115741-7D1B-B566-7819-07372A2410A0" name="registros_archivos_usuarios_FKv1">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:23:42 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
@@ -163,9 +212,9 @@
 <colUsage columnID="E97D62CF-9FD0-91F1-1194-3EC9EC63F402"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D584E7A9-BD69-8203-9292-F6C9CD612537" name="personas_conexiones_personas_ambientes_FK">
+<ind_PK_UK id="46D000DB-60CE-8E95-11F4-3DB2E8840330" name="registros_archivos_registros_FK">
 <createdBy>systech59</createdBy>
-<createdTime>2022-06-21 01:23:57 UTC</createdTime>
+<createdTime>2022-06-26 00:39:06 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

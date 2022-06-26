@@ -1,15 +1,44 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF7DC2DD-1A37-6F49-E27C-6672AB5F91A7" name="contratos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF7DC2DD-1A37-6F49-E27C-6672AB5F91A7" name="registros_fechas">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<notes><![CDATA[Tabla para guardar los  registros_archivos
+
+Tipo de Registro : Arquitectura
+
+Persona : ROLDAN
+registro : SANDBOX
+Secuencia : 1
+Fecha Inicial : 20220101
+Fecha Final : 
+TExto : 20221215. 
+
+Persona : ROLDAN
+registro : SANDBOX
+Secuencia : 1
+Fecha Inicial : 20220508
+Fecha Final : 
+TExto : 20230101. 
+
+
+
+Tipo de Registro : Contratos
+
+Persona : ROLDAN
+registro : CONTRATO Inicial
+Secuencia : 1
+Fecha Inciial : 20220104
+FEcha Final : 20230104
+Texto: Contrato etre firmantes
+Archivo : CONTRATO:PDF]]></notes>
 <ownerDesignName>crm</ownerDesignName>
 <importedID>10B6C55A-46C9-11C5-6A79-54E512D018C8</importedID>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_contrato" id="551D79BA-6DD9-E995-8386-3658692920B7">
+<Column name="id_registro_fecha" id="551D79BA-6DD9-E995-8386-3658692920B7">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -24,26 +53,12 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_tipo_contrato" id="E046A25F-4268-4AD7-4049-A1A02B8F47A8">
+<Column name="id_registro" id="E046A25F-4268-4AD7-4049-A1A02B8F47A8">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
 <importedID>74813057-2F5C-F5AB-6479-9D6EAABEA6A6</importedID>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_persona" id="82191FAB-4E5A-0257-B32E-04385BE478D9">
-<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
-<createdBy>systech59</createdBy>
-<createdTime>2022-06-17 01:10:25 UTC</createdTime>
-<ownerDesignName>crm</ownerDesignName>
-<importedID>1BD6DF9E-ECAF-B1FA-8241-B4C419E1771E</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -51,10 +66,22 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="559A6CBA-BAD0-39E4-CBDE-4C49A6358D7A" referredColumn="0B9A1709-48B2-425C-30AD-D60A5BF1C5E5"/>
+<colAssociation fkAssociation="5D3C0154-75B6-523A-CA94-F6E3F6DA4021" referredColumn="832746EE-6467-E51E-4E8F-48B5D20238AC"/>
 </associations>
 </Column>
-<Column name="fecha" id="76B47532-54D0-EC64-7A19-7839EDE7B504">
+<Column name="secuencia" id="33B61806-731A-1EB6-DB74-43EAC6A4E50B">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-26 00:51:57 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="76B47532-54D0-EC64-7A19-7839EDE7B504">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -66,7 +93,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fecha_finalizacion" id="D8BD359C-C3A3-8AE8-BF59-9C73D3104A57">
+<Column name="fecha_final" id="D8BD359C-C3A3-8AE8-BF59-9C73D3104A57">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -79,7 +106,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="soporte" id="606E07CB-E23A-8B91-E3E9-10C52D2A2A3C">
+<Column name="archivo" id="606E07CB-E23A-8B91-E3E9-10C52D2A2A3C">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -89,11 +116,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>80</dataTypeSize>
-<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="poliza" id="0E4991B7-4611-D448-3E69-A2F19B9BBC4B">
+<Column name="texto" id="0E4991B7-4611-D448-3E69-A2F19B9BBC4B">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -102,9 +129,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>80</dataTypeSize>
-<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="activo" id="33A00700-AB69-2BF7-1124-00B5CD13A9D1">
@@ -145,7 +171,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>16</dataTypePrecision>
 <domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="24D56A5B-9C41-250F-E04F-B104D0CB9581" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
@@ -176,7 +202,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>16</dataTypePrecision>
 <domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7050F3F7-C354-10AF-4EAA-AFD24EB76174" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
@@ -184,7 +210,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0CE4E0C7-A02E-84CA-B068-EC979AEF5D71" name="contratos_pk">
+<ind_PK_UK id="0CE4E0C7-A02E-84CA-B068-EC979AEF5D71" name="registros_Fechas_pk">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-17 01:10:25 UTC</createdTime>
@@ -197,7 +223,7 @@
 <colUsage columnID="551D79BA-6DD9-E995-8386-3658692920B7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="53803D7A-FC24-FEB7-92A6-BDDB7D86116B" name="contratos__UN">
+<ind_PK_UK id="53803D7A-FC24-FEB7-92A6-BDDB7D86116B" name="registros_fechas__UN">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:30:08 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
@@ -205,10 +231,10 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E046A25F-4268-4AD7-4049-A1A02B8F47A8"/>
-<colUsage columnID="82191FAB-4E5A-0257-B32E-04385BE478D9"/>
+<colUsage columnID="33B61806-731A-1EB6-DB74-43EAC6A4E50B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="74CC768D-DFD8-26C6-6E2E-55A91A0FCE2B" name="contratos_usuarios_FK">
+<ind_PK_UK id="74CC768D-DFD8-26C6-6E2E-55A91A0FCE2B" name="registros_fechas_usuarios_FK">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:28:25 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
@@ -218,7 +244,7 @@
 <colUsage columnID="5200F351-EBB6-2C95-9951-F4AA65245107"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4785A1CF-03C3-A2A6-E081-D061702ADE9C" name="contratos_usuarios_FKv1">
+<ind_PK_UK id="4785A1CF-03C3-A2A6-E081-D061702ADE9C" name="registro_fecha_usuarios_FKv1">
 <createdBy>systech59</createdBy>
 <createdTime>2022-06-21 01:28:38 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
@@ -228,14 +254,14 @@
 <colUsage columnID="64C96CA4-284D-7799-DB07-7FBFE26A7C9A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="13175FDA-9669-DC0C-E9A8-5D771B2E8766" name="contratos_personas_FK">
+<ind_PK_UK id="09B3746D-E7EB-E6B9-86B0-BF1DE779B23C" name="registros_fechas_registros_FK">
 <createdBy>systech59</createdBy>
-<createdTime>2022-06-21 01:29:26 UTC</createdTime>
+<createdTime>2022-06-26 00:58:21 UTC</createdTime>
 <ownerDesignName>crm</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="82191FAB-4E5A-0257-B32E-04385BE478D9"/>
+<colUsage columnID="E046A25F-4268-4AD7-4049-A1A02B8F47A8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
