@@ -116,8 +116,8 @@ Archivo : CONTRATO:PDF]]></notes>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="texto" id="0E4991B7-4611-D448-3E69-A2F19B9BBC4B">
@@ -141,11 +141,22 @@ Archivo : CONTRATO:PDF]]></notes>
 <importedID>A93CCFCF-3360-1C3C-993D-3EAF4BDE0378</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<domain>26AA2B68-F94F-0CFA-273B-16A5FA773173</domain>
+<domain>D6416B9C-AA81-4488-E571-CA2FA0C0FA9B</domain>
 <defaultValue>S</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_perfil" id="87656BA9-D79E-644F-F13F-E6A7E21EB3ED">
+<createdBy>systech59</createdBy>
+<createdTime>2022-07-19 03:20:35 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC5DD327-BDFD-A578-0D03-CC6D34295B04" referredColumn="2CA245AD-8540-51B2-4C59-9F08759F9D62"/>
+</associations>
 </Column>
 <Column name="fecha_insercion" id="94FADF83-131E-5841-1D1E-F150A728339E">
 <sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
@@ -263,6 +274,16 @@ Archivo : CONTRATO:PDF]]></notes>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E046A25F-4268-4AD7-4049-A1A02B8F47A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D95F64F9-5198-A322-E2FB-A1928DCE9005" name="registros_fechas_perfiles_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-07-19 03:21:08 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87656BA9-D79E-644F-F13F-E6A7E21EB3ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
