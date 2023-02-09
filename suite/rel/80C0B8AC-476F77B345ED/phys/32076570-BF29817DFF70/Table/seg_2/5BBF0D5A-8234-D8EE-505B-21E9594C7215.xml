@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="preparaciones" directorySegmentName="seg_2" id="5BBF0D5A-8234-D8EE-505B-21E9594C7215">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<schemaObject>4996015A-2053-30D5-BD5A-1522554E1A37</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="componente" id="1A3623C0-E552-AD9E-1AF2-1C58B9994ACE">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="oid" id="3F14BA3E-2DA8-F7B7-D78C-10C89D31D9BC">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>nextval(&apos;preparaciones_oid_seq&apos;::regclass)</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="area_produccion" id="458C3062-B8E9-71AE-CA18-F51E734B3535">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usuario_insercion" id="5C6BFD0A-2D46-8AFA-4443-DB74C76E5BB7">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="activo" id="700FD8F9-93B7-1F36-D3F5-FC3959E57D23">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="preparacion" id="82A6CE3A-B16F-CB95-06A0-A7E7715FE121">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="adicional" id="B233A93A-15EC-B923-07B0-BE5F429FA38D">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="fecha_insercion" id="B32AE349-2A31-512D-F6FA-9F8DCFCD523C">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>now()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="permite_adicional" id="B8801BB2-0B54-288D-6B83-3DEC0E5F0985">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="nombre" id="BB88193C-BB13-44DD-D49F-97C495663DF6">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_punto" id="D1F9011D-EDF1-8A6F-42DD-0729073BB3AB">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="interfaz" id="D400DF1B-00C6-9D94-3451-D1CC340EA02E">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="prep_tipo_punt_fk" id="9D7E448B-4EC3-07BB-4C30-0167025902BA">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="prep_area_prod_fk" id="78994D8E-D8BA-3D5D-0ECB-A5001E7B3875">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="prep_compo_fk" id="975C4606-8D00-B9D5-E360-19AE4601F065">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="prep_tipo_punt_fk" id="DE882916-6C0E-79EB-3B66-5C62141E5E00">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="prep_pk" id="F988CA02-1973-6A31-33C8-3189C1CF302F">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="prep_usin_ck" id="54586EAB-CA35-D8C2-6DB5-C1E749055B89">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="prep_inte_ck" id="C7E3FAA2-4D39-C019-242D-147560483E61">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="preparaciones_oid" id="E1198D88-3FFB-1936-A424-7A3AB76FE736">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="nacionalizaciones_anexos" directorySegmentName="seg_0" id="00F03871-33FC-ABD4-8C7C-DF82E316EA2A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<schemaObject>4996015A-2053-30D5-BD5A-1522554E1A37</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nombre_anexo" id="5241E03D-212E-4C4B-7843-20C8D3E1765A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_documento_transporte" id="5E82023B-C678-B5F9-AE65-93A3E6414E75">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usuario_insercion" id="7D74B77B-7BFF-D0AB-EF7E-816457851112">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="formulario" id="7F62D24E-D62D-D38B-5779-BF0A3FDD1791">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="punto" id="83461F61-2A64-6501-59B1-665C4718F967">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_insercion" id="85AF6A69-289F-81D0-B85A-2EAD94D61C85">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>now()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="dato" id="85EE83DB-4D42-470A-4C55-72675B077DD1">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="interfaz" id="BAE05890-BDDC-3EA3-7F5F-4438CF3B2560">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="oid" id="C2C36891-273E-FFFE-79C2-50D675C4F94F">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>nextval(&apos;nacionalizaciones_anexos_oid_seq&apos;::regclass)</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="documento_transporte" id="D2E224C0-8DEA-9A50-4C80-58CAF336F8FE">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="codigo_anexo" id="D753D138-BF63-4884-0664-F58DA4BB686D">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="naci_anex_docu_tran_fk" id="8853E761-05E5-2685-60DB-99F1AC7D7C9A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="naci_anex_naci_fk" id="EDD5A2B9-DAE7-2324-641C-48005C1A7930">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="naci_anex_pk" id="5CE845D0-3A70-CC46-0DFE-252F1FD74560">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="naci_anex_ck_01" id="22DDE707-1A61-0127-350D-DD5980625D06">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="naci_anex_usin_ck_02" id="B2F3D038-F202-B9DA-FD3A-C9CB1872202A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="naci_anex_oid" id="E80477D9-57A8-DB67-5B6E-165B976E7779">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

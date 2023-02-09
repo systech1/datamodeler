@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="planeaciones_sscc" directorySegmentName="seg_3" id="70238469-2E22-7E66-59FC-21D2491E0814">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<schemaObject>4996015A-2053-30D5-BD5A-1522554E1A37</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="fecha_insercion" id="17338C2B-E641-C664-3553-9848EE02231E">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>now()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="planeacion" id="1CA540D4-B93C-826C-480C-5CC3A0F86973">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="punto" id="2835211D-2111-58E6-5BAF-3B6FDCD80A53">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="oid" id="907B22C6-00C0-8BCD-1F97-F1D3A8582F07">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>nextval(&apos;planeaciones_sscc_oid_seq&apos;::regclass)</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="usuario_insercion" id="AC8537ED-55F4-EB2E-E8C8-2D1516621E86">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="interfaz" id="E1349B0E-B81E-C900-7532-D038EDCF18B5">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="sscc" id="EE089A48-27FA-B346-D8FD-6C7A988EF079">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usado" id="F951E35A-D843-6147-61CF-87F093AB6B7F">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="plan_sscc_ubic_fk" id="6A822988-D3CA-66E0-B6FF-B8BB2BD28D83">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="plan_sscc_plan_fk" id="75906602-A39B-97AF-A133-22275A48280D">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="plan_sscc_pk" id="E858AE59-B5C5-23BF-44DA-B89EC219B091">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="plan_sscc_usin_ck_03" id="AF5ABCE6-E9F8-1850-BEFA-94975AE3FCB9">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="plan_sscc_usad_ck_01" id="C080DE95-8E7F-F76F-F1BF-0142063DED17">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="plan_sscc_inte_ck_02" id="F9236D4A-5ECF-5B4E-2453-0ED312FD75D6">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="planeaciones_sscc_oid" id="514CE50E-1341-421F-EAE3-2369BFAA04AD">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

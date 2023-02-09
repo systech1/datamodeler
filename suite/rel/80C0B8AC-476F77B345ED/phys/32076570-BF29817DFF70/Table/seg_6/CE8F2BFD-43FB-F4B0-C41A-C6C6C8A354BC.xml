@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="tipos_cajas" directorySegmentName="seg_6" id="CE8F2BFD-43FB-F4B0-C41A-C6C6C8A354BC">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<schemaObject>4996015A-2053-30D5-BD5A-1522554E1A37</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="dimensiones_libres" id="102A4E4C-F812-747D-BB4C-8DAE79775235">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="alto" id="193A2FC0-DF09-058B-0C23-8D2C773043C9">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usuario_insercion" id="23785D86-C15B-95C4-1F54-1706AEE7F741">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="peso" id="30DAB832-36C8-2609-D061-471100037244">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_caja" id="653ECEB3-96E4-C358-DCBC-4E80FA3E408D">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="articulo" id="7C3B2B2B-F95C-1C4E-9173-866985B5D07B">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="oid" id="8091F7DA-FA62-5821-EEFD-56B142D3905B">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>nextval(&apos;tipos_cajas_oid_seq&apos;::regclass)</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ancho" id="892F40D4-6D58-CDC8-3AB5-C82456FE0B00">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="interfaz" id="936F8E86-8660-D542-7A2C-AD88EDEDB541">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>&apos;N&apos;::character varying</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="nombre" id="94D26437-1673-FDA6-017D-99E988D232F2">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="activo" id="9DE299FB-85B7-F64D-7386-0AD2189224AD">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="largo" id="BDBB815D-95B6-5CE0-4691-17FC26F05A72">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="es_propia" id="F3E6B31F-7D9F-7FCD-2B77-7FBB6AB9C4E5">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_insercion" id="F4BBCB3C-AC49-0AB1-FFF0-B0ECB41A7087">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>now()</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="tipo_caja_arti_fk" id="08E476E8-EE0D-1C14-D8D9-45E056BA558E">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="tipo_caja_usua_fk" id="3548CDD5-570C-B2BC-8A59-ECFF50A55392">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tipo_caja_pk" id="0437E3BD-031F-DB6D-9252-759D6B3192A9">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="tipo_caja_activ" id="1D115005-5DE3-8BF4-1DB1-E7694553BE21">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="tipo_caja_inter" id="B4D22EDF-739B-FAB9-F0C8-5F73895C38D9">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="tipos_cajas_oid" id="B8DA417C-233B-7122-E272-7F167A6FA009">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

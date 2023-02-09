@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="fechas_colores" directorySegmentName="seg_5" id="A1DFDC4F-8EA5-6678-6ABF-6940005D3FF3">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<schemaObject>4996015A-2053-30D5-BD5A-1522554E1A37</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="color" id="1105D558-5CE3-5A1F-707C-38948D07A078">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numero" id="243ABDDA-0833-8A4E-31A3-99F6055ED05A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usuario_insercion" id="3B4B90C8-ED94-C476-CE05-87C1616B8EE2">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="oid" id="92989A0E-B101-C738-F15A-84E726576AA7">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>nextval(&apos;fechas_colores_oid_seq&apos;::regclass)</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="interfaz" id="C75C30E3-0C3D-3905-D5E9-0A1D058FF601">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="fecha_insercion" id="DBF4838C-8548-D382-32E1-DCA0E8ED02DA">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<defaultValue>now()</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="fech_colo_pk" id="CEA8B51C-808B-4AC4-2E73-653804FE362A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="fech_colo_usin_ck" id="2F99F28E-AE1C-69D4-5867-DDC630EABF72">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+<TableCheckConstraint name="fech_colo_inte_ck" id="717386D4-45A6-9053-C0FF-ECAA931C535A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="fechas_colores_oid" id="F99A52F2-005E-6FDD-ACBB-E88F2909C1AF">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:08 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

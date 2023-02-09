@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="103179FB-3252-8CEB-10AD-6F49128CC1C4" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="zonas_vendedores">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>zonas_vendedores</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="zona" id="639842D2-7D70-38F3-8BD5-D1BA64A6A4D8">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>zonas_vendedores</sourceObjSchema>
+<sourceObjName>zona</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="178E6D4A-F297-ADC5-0E00-08F66A73FA9A" referredColumn="70242E54-1CE3-1254-807C-6F0F680607C6"/>
+</associations>
+</Column>
+<Column name="vendedor" id="AF3E95F9-AD1E-CFAF-6C16-755E416FDA2C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>zonas_vendedores</sourceObjSchema>
+<sourceObjName>vendedor</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3278897B-39BD-A86A-FF65-26B8858B62A6" referredColumn="5E14BD76-F4C2-49CF-FEF2-9AF526B70F27"/>
+</associations>
+</Column>
+<Column name="fecha_insercion" id="55AFB9A1-F951-B3A2-836A-8B2AFD95BD1B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>zonas_vendedores</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="614A32C6-1D6E-C0D7-D50D-C8D663500ADF">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>zonas_vendedores</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="C60F3D77-AE48-DF1E-8BB8-842EECC767E3">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>zonas_vendedores</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centro_costo" id="DF92C165-2128-CF65-BE65-3BC59744A835">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>zonas_vendedores</sourceObjSchema>
+<sourceObjName>centro_costo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="D5D85F6B-1C34-F8AF-9752-C01C911A7A74">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>zonas_vendedores</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;zonas_vendedores_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07096957-4172-C9E3-512A-E9DC91E920D9" name="zona_vend_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>zona_vend_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="639842D2-7D70-38F3-8BD5-D1BA64A6A4D8"/>
+<colUsage columnID="AF3E95F9-AD1E-CFAF-6C16-755E416FDA2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2ECD48FE-CD4D-7BB9-97E5-C3BB24D1EB62" name="zonas_vendedores_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>zonas_vendedores_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5D85F6B-1C34-F8AF-9752-C01C911A7A74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E119075-2B17-1EFB-439A-9E3E10EC3204" name="zona_vend_vend_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>zona_vend_vend_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF3E95F9-AD1E-CFAF-6C16-755E416FDA2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC95E6A1-82AA-9FB0-0033-213200F27191" name="zona_vend_zona_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>zona_vend_zona_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="639842D2-7D70-38F3-8BD5-D1BA64A6A4D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="174F3853-CAF3-3BB7-DB1D-28B117E3165D" name="zona_vend_vend_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF3E95F9-AD1E-CFAF-6C16-755E416FDA2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BDDAD24-E354-0A32-99F3-1F2FF618E651" name="zona_vend_zona_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:07 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="639842D2-7D70-38F3-8BD5-D1BA64A6A4D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="usua_inse_ck_0328" directorySegmentName="seg_25" id="EEBD277E-FA31-6626-F668-492A7FE7C819">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898370_inter_009" directorySegmentName="seg_25" id="D550DFB1-5299-A263-9FB8-FC677855BCEB">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

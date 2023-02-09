@@ -1,0 +1,350 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="9868CBD5-AA42-E90D-E911-8BBFA67759A9" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="perfiles">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>perfiles</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="perfil" id="89397139-EBC1-3408-FFAE-3C4456C9FEFC">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>perfil</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="443206DC-30FA-18F6-D019-A7D815371E98">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>nombre</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="E937D5F7-8AF1-C63B-74FC-02FBB43E700E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>activo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="minima_contrasena" id="6262D4F0-B60B-0F4E-372E-BFBE50396ED0">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>minima_contrasena</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>4</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="maxima_contrasena" id="DD6FF0D5-B0B5-D5EC-F8F9-0B7FCA85D9A0">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>maxima_contrasena</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>8</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contrasena_expira" id="CB9F97A2-F776-52B4-7779-55CF52291C50">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>contrasena_expira</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dias_contrasena_expira" id="FF5463FC-7AC0-2AED-54B0-7CD33A193CEC">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>dias_contrasena_expira</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valida_intentos" id="A9F7389F-B92A-3496-66DD-BEBBA02DE4E5">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>valida_intentos</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_intentos" id="457DC6F4-F3CC-FE75-3007-1DDD3FED9A51">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>numero_intentos</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<defaultValue>3</defaultValue>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contrasena_historial" id="B2F26F35-0DBA-F61D-5FA6-953B0145D482">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>contrasena_historial</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obliga_numeros" id="2F3F0468-AC18-E069-D2E0-FC5423C32568">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>obliga_numeros</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obliga_minusculas" id="BB17B566-FBBD-A03F-A5CB-2778ACA8468C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>obliga_minusculas</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obliga_mayusculas" id="E4AE1317-44F2-0C31-5579-562EA68421E8">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>obliga_mayusculas</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obliga_especiales" id="F48E834C-34DC-9538-083F-FE1AEEA4CD41">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>obliga_especiales</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="D9C5A304-CDB9-6497-619E-3CE0B14EC19B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="CFD166E9-B495-C5D8-A075-AE5264D32A8C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="C05ECB77-90C1-AD72-8A5B-2ED58B99B115">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="789E662F-D73F-4CB5-6F5D-59DC7CB2A2F3">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>perfiles</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;perfiles_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26801DC9-9086-63F5-5CF9-067E090C4501" name="perf_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>perf_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89397139-EBC1-3408-FFAE-3C4456C9FEFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3919DC5A-A553-7E45-DDE9-12499D22E355" name="perfiles_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>perfiles_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="789E662F-D73F-4CB5-6F5D-59DC7CB2A2F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="avcon_1138898360_activ_014" directorySegmentName="seg_15" id="AC9AC51C-D2B1-EB3D-59F9-6BF40F6ADD7F">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((activo)::text = 'S'::text) OR ((activo)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_3541331259_mayus_012" directorySegmentName="seg_15" id="CB68FA4C-1B0F-D082-6570-1EC6CEDF444B">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((obliga_mayusculas)::text = 'S'::text) OR ((obliga_mayusculas)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_3541331259_espec_012" directorySegmentName="seg_15" id="2BB46E2D-7A29-F255-1C98-40E9A72D2246">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((obliga_especiales)::text = 'S'::text) OR ((obliga_especiales)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_3541331259_numer_011" directorySegmentName="seg_15" id="4F841992-7145-9C1F-5E00-E9DB304B26F3">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((obliga_numeros)::text = 'S'::text) OR ((obliga_numeros)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_3541331259_expir_012" directorySegmentName="seg_15" id="253249BE-1DDB-66A5-62C9-B4CE5F980FC4">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((contrasena_expira)::text = 'N'::text) OR ((contrasena_expira)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898360_inter_031" directorySegmentName="seg_15" id="082C0566-DCE2-631C-B08C-C5E8BFEC26DF">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="usua_inse_ck_0207" directorySegmentName="seg_15" id="5A22DBE6-7B91-5A23-EC1E-573A87FA8A49">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_3541331259_minus_012" directorySegmentName="seg_15" id="7B91DFB3-035D-2C97-8045-64ED11C7BAD2">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((obliga_minusculas)::text = 'S'::text) OR ((obliga_minusculas)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_3541331259_inten_012" directorySegmentName="seg_15" id="5ECBCBE8-037A-736C-A29D-63C63BC875CA">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((valida_intentos)::text = 'S'::text) OR ((valida_intentos)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

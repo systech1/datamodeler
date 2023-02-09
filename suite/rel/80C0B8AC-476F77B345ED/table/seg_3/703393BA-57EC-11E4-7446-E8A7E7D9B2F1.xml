@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="703393BA-57EC-11E4-7446-E8A7E7D9B2F1" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="logs_detalles_despachos">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>logs_detalles_despachos</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="E3036FF8-5E71-E260-0D4E-11A776D51FCE">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="933594EA-B36C-1736-B926-0D39C173C9AF" referredColumn="35A8F333-3187-647E-910A-1BD9BBB19DCA"/>
+</associations>
+</Column>
+<Column name="despacho" id="46182421-D68F-F0FF-B54C-749D96B11420">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>despacho</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="933594EA-B36C-1736-B926-0D39C173C9AF" referredColumn="4C255FE6-0CCF-C9B4-9E32-F5FE3DE05F4F"/>
+</associations>
+</Column>
+<Column name="secuencia" id="FF5005B3-53B9-6587-FF79-5383089C3CBD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>secuencia</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="933594EA-B36C-1736-B926-0D39C173C9AF" referredColumn="15D66EFF-0752-2BD4-54FC-00FE1BBAF3D5"/>
+</associations>
+</Column>
+<Column name="observacion" id="7BC91528-26D0-E42E-9E89-144EFA8B8F96">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>observacion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="56755582-613E-A6A0-F89F-DCEF5EB9DA9B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="53FDE824-D9E3-2198-A1F4-FF077C9B4431">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="D3050EF4-B0A8-1986-7172-24D9A830B598">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="00724319-AA7D-4B65-D593-78CBDCC58160">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>logs_detalles_despachos</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypeSize>19</dataTypeSize>
+<defaultValue>nextval(&apos;logs_detalles_despachos_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>19,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="498625DE-F8A8-CC98-8D44-81C38E7EF307" name="logs_deta_desp_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>logs_deta_desp_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3036FF8-5E71-E260-0D4E-11A776D51FCE"/>
+<colUsage columnID="46182421-D68F-F0FF-B54C-749D96B11420"/>
+<colUsage columnID="FF5005B3-53B9-6587-FF79-5383089C3CBD"/>
+<colUsage columnID="53FDE824-D9E3-2198-A1F4-FF077C9B4431"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F1406A1-901E-2588-0C92-B477102DA8E6" name="logs_deta_desp_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>logs_deta_desp_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00724319-AA7D-4B65-D593-78CBDCC58160"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7D8DE2F-26E5-049D-F588-CF430B552BA0" name="logs_deta_desp_deta_desp_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3036FF8-5E71-E260-0D4E-11A776D51FCE"/>
+<colUsage columnID="46182421-D68F-F0FF-B54C-749D96B11420"/>
+<colUsage columnID="FF5005B3-53B9-6587-FF79-5383089C3CBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="logs_deta_desp_ck_01" directorySegmentName="seg_13" id="A6719599-7A82-10CF-200D-625793DD0DE2">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="logs_deta_desp_usin_ck_02" directorySegmentName="seg_13" id="7452130B-47D8-3DA6-5FE1-9ABA94E80A3D">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:22 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

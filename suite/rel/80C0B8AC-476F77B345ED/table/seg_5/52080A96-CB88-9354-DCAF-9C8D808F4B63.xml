@@ -1,0 +1,226 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_5" id="52080A96-CB88-9354-DCAF-9C8D808F4B63" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="sectores_proveedores">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sectores_proveedores</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="6141856F-BF5A-692C-106D-5838094000FC">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10EF2510-DF52-5B3F-27EE-AF02DFCAB443" referredColumn="E5995B2D-A074-4CA9-3674-9AD907ED11F4"/>
+</associations>
+</Column>
+<Column name="sector" id="20783B98-DE1A-BE9D-3868-1A70449A2CF0">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>sector</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10EF2510-DF52-5B3F-27EE-AF02DFCAB443" referredColumn="A65BF057-7F31-6390-6BD0-0EF129E21C97"/>
+</associations>
+</Column>
+<Column name="proveedor" id="EB64BAAB-478B-A1D7-00BD-5252D7FDD574">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>proveedor</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AD0CF1E-56D5-FA77-7BAE-E22447B34B30" referredColumn="90FA134C-A01A-002F-9A2C-117EA120BDF0"/>
+</associations>
+</Column>
+<Column name="activo" id="7EFD7CCB-869F-4BA9-B04B-B774B901E75B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>activo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;S&apos;::character varying)::decision_s_n</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="395D2454-4D82-F9E8-166E-861ED0722352">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="BAAA2A7B-6354-0832-D46E-1226B1CD27FC">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="9090AD4E-EC02-E1A0-6FC1-13E4E1CB346B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="D83F2DDE-82A6-CA04-5393-A17943E56F4C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>sectores_proveedores</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;sectores_proveedores_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32D496D9-F019-863B-7787-0EFE94C6A9CF" name="sect_prov_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sect_prov_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6141856F-BF5A-692C-106D-5838094000FC"/>
+<colUsage columnID="20783B98-DE1A-BE9D-3868-1A70449A2CF0"/>
+<colUsage columnID="EB64BAAB-478B-A1D7-00BD-5252D7FDD574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DB96053-1F64-6513-DFD2-1389D9CDB389" name="sectores_proveedores_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sectores_proveedores_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D83F2DDE-82A6-CA04-5393-A17943E56F4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EA79420-CE17-248C-A9AE-4D824E275360" name="sect_prov_prov_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sect_prov_prov_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6141856F-BF5A-692C-106D-5838094000FC"/>
+<colUsage columnID="20783B98-DE1A-BE9D-3868-1A70449A2CF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BC298BE-EED2-A5D3-A254-A96572DE45B8" name="sect_prov_sect_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sect_prov_sect_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20783B98-DE1A-BE9D-3868-1A70449A2CF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14D26D21-C303-4232-1C7D-1862803AB31B" name="sect_prov_prov_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:05 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB64BAAB-478B-A1D7-00BD-5252D7FDD574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D896542-9126-490F-5928-5BC210464868" name="sect_prov_sect_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:05 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6141856F-BF5A-692C-106D-5838094000FC"/>
+<colUsage columnID="20783B98-DE1A-BE9D-3868-1A70449A2CF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="sect_prov_acti_ck" directorySegmentName="seg_19" id="0A233BA1-B79B-22B3-D650-5E49B4207C1E">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((activo)::text = 'S'::text) OR ((activo)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="sect_prov_inte_ck" directorySegmentName="seg_19" id="733E48D5-0842-CBB4-DFE3-23CE4828DE82">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:40 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

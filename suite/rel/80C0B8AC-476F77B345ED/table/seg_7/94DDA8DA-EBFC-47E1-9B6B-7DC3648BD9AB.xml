@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="94DDA8DA-EBFC-47E1-9B6B-7DC3648BD9AB" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="tipos_puntos_tipos_recetas">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tipos_puntos_tipos_recetas</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo_punto" id="B0DA3DDD-F0D4-8F9A-7FCA-32B6791F159D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tipos_puntos_tipos_recetas</sourceObjSchema>
+<sourceObjName>tipo_punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A39E2505-5148-E48F-3946-77389BA83DD5" referredColumn="1EF038A4-10AD-C8D9-F937-3E797F822750"/>
+</associations>
+</Column>
+<Column name="tipo_receta" id="5CA0FBE4-B209-556D-719B-7FD143D0E566">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tipos_puntos_tipos_recetas</sourceObjSchema>
+<sourceObjName>tipo_receta</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4629E79E-68EE-36C3-43A6-322B5ECFDF91" referredColumn="8087593B-0BD4-E0E9-7983-302DD777A830"/>
+</associations>
+</Column>
+<Column name="fecha_insercion" id="730EB001-6837-77C7-A11F-EAE7ACA4099C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tipos_puntos_tipos_recetas</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="98627224-3822-3674-C90B-2A82B26DC60A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tipos_puntos_tipos_recetas</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="976297B4-F795-D736-7EFA-3B0C768CBE36">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tipos_puntos_tipos_recetas</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="81A47EA0-15DD-1C07-8067-52BCADB1E3FF">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tipos_puntos_tipos_recetas</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;tipos_puntos_tipos_recetas_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F786DE65-6EB2-D029-8BD2-D79BBDADA8F9" name="tipu_tire_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tipu_tire_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0DA3DDD-F0D4-8F9A-7FCA-32B6791F159D"/>
+<colUsage columnID="5CA0FBE4-B209-556D-719B-7FD143D0E566"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="238B1C7C-CAA8-D7F0-AC94-3835F436A9AC" name="tipos_puntos_tipos_recetas_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tipos_puntos_tipos_recetas_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81A47EA0-15DD-1C07-8067-52BCADB1E3FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E1A3BD0-B3D6-43C2-B4FD-4AAB54A9078A" name="tipu_tire_tipo_punt_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tipu_tire_tipo_punt_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0DA3DDD-F0D4-8F9A-7FCA-32B6791F159D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CC40022-64CC-57B8-3F77-5521BEB7A7B1" name="tipu_tire_tipo_rece_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tipu_tire_tipo_rece_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CA0FBE4-B209-556D-719B-7FD143D0E566"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71B5DBBC-D5B9-B878-1300-7F8EFBC15E99" name="tipu_tire_tipo_punt_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:06 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0DA3DDD-F0D4-8F9A-7FCA-32B6791F159D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B42429BC-0FAF-15BE-758E-BB7FA8205DB6" name="tipu_tire_tipo_rece_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:06 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CA0FBE4-B209-556D-719B-7FD143D0E566"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="tipu_tire_inte_ck" directorySegmentName="seg_23" id="6EA58FE6-4065-EDF6-B5E7-3DE4697B1583">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="tipu_tire_usin_ck" directorySegmentName="seg_23" id="9D47E0CE-EEAC-9CDC-D6A1-BAD3A9E1E6B5">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:51 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

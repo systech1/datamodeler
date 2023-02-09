@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="AD3F1D7A-D5AE-B550-410B-A6A20650711D" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="personas_actividades_economica">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>personas_actividades_economica</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="identificacion" id="E8AECCF0-555F-94DC-B3A4-5F705332092D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>personas_actividades_economica</sourceObjSchema>
+<sourceObjName>identificacion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C714752-26D2-3E8D-A78A-15759D794A21" referredColumn="4AF6F78D-B38C-8F15-708E-945ED7B82BE3"/>
+</associations>
+</Column>
+<Column name="actividad_economica" id="C1697021-876C-3980-EB46-6EEBFAC6FED8">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>personas_actividades_economica</sourceObjSchema>
+<sourceObjName>actividad_economica</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E62D584F-EAE8-31CC-6BE5-108ED6E28255" referredColumn="19DF2E48-0D3A-382F-2D5E-E8BB2FA27CC8"/>
+</associations>
+</Column>
+<Column name="fecha_insercion" id="120418CE-D91E-2906-513C-D9D3CBC99A71">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>personas_actividades_economica</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="A416DB2F-67A3-77AE-91F6-D5BC901CC213">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>personas_actividades_economica</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="F7FBE6F5-223D-3EC2-2621-9000D00DDA7B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>personas_actividades_economica</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="08ECD3E5-2DFC-E1F9-9972-595D9DC8A038">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>personas_actividades_economica</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;personas_actividades_economica_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADCDAD4C-71A8-E8FA-436A-AE7FB3CFEE6B" name="pers_acec_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pers_acec_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1697021-876C-3980-EB46-6EEBFAC6FED8"/>
+<colUsage columnID="E8AECCF0-555F-94DC-B3A4-5F705332092D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55F9C423-D4B5-9B34-E427-10AC3B89EFC4" name="personas_actividades_economica_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>personas_actividades_economica_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08ECD3E5-2DFC-E1F9-9972-595D9DC8A038"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F051CA8D-2DDF-48A1-F22E-A7DE46803F6F" name="pers_acec_acti_econo_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pers_acec_acti_econo_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1697021-876C-3980-EB46-6EEBFAC6FED8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CBB298E-B97F-CADC-76CB-5B33AF492BAB" name="pers_acec_person_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pers_acec_person_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8AECCF0-555F-94DC-B3A4-5F705332092D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF20A5D3-49D2-1407-A1A2-13F5765A2D6D" name="pers_acec_acti_econo_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:03 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1697021-876C-3980-EB46-6EEBFAC6FED8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32502FDE-230E-8D2B-7929-4E0CA65452E2" name="pers_acec_person_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:03 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8AECCF0-555F-94DC-B3A4-5F705332092D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="usua_inse_ck_0211" directorySegmentName="seg_15" id="6077C1F2-9C13-D5C2-29D0-547D05EA475F">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_inter_036" directorySegmentName="seg_15" id="962E3740-5630-E2F9-822D-67830F771DB0">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:29 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_6" id="F8D44A89-578D-CD2B-2347-DFA6188439BB" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="tareas_cambios_estados">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tareas_cambios_estados</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="BF8077EC-1632-5DD4-3F4B-1F8BC8E5D9CD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tareas_cambios_estados</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A653296-AFA5-8C15-FF68-907F4B5AC778" referredColumn="4F9DB6E2-7A51-E1A1-E30E-03FFF2374967"/>
+<colAssociation fkAssociation="66E22C49-95D2-8775-A187-A13FEF28B1E6" referredColumn="F0274D6C-218E-D228-11D9-90464A58499B"/>
+</associations>
+</Column>
+<Column name="tarea" id="CF2FE0C0-C539-9324-D7F3-B1B28E14CD2C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tareas_cambios_estados</sourceObjSchema>
+<sourceObjName>tarea</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21</dataTypeSize>
+<ownDataTypeParameters>21,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66E22C49-95D2-8775-A187-A13FEF28B1E6" referredColumn="C48D2140-7A9A-4361-EE51-A8AFFE479FE9"/>
+</associations>
+</Column>
+<Column name="cambio_estado" id="315A6CD0-8181-DE8D-D463-1A0ACE4445E1">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tareas_cambios_estados</sourceObjSchema>
+<sourceObjName>cambio_estado</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A653296-AFA5-8C15-FF68-907F4B5AC778" referredColumn="F2935F28-FE8D-ADBE-3409-8FA518D2AB01"/>
+</associations>
+</Column>
+<Column name="fecha_insercion" id="2736A282-9FC9-050A-B260-F27B01B3CCA1">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tareas_cambios_estados</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="64931A4C-2FDD-20EB-3588-5563ACC11A35">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tareas_cambios_estados</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="A4C24F21-F513-A98B-D6E9-E89038A3932D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tareas_cambios_estados</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="F9518BD7-2E65-F9E9-2B54-D9F1AEA81A38">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>tareas_cambios_estados</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;tareas_cambios_estados_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30317DFF-2E56-5F89-ACDF-A880616A97B9" name="tare_caes_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tare_caes_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8077EC-1632-5DD4-3F4B-1F8BC8E5D9CD"/>
+<colUsage columnID="CF2FE0C0-C539-9324-D7F3-B1B28E14CD2C"/>
+<colUsage columnID="315A6CD0-8181-DE8D-D463-1A0ACE4445E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F39B811-EFFD-F341-04CD-53AA78116B93" name="tareas_cambios_estados_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tareas_cambios_estados_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9518BD7-2E65-F9E9-2B54-D9F1AEA81A38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1146461E-6EB0-5213-6C5F-D6C533806179" name="tare_caes_camb_esta_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tare_caes_camb_esta_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8077EC-1632-5DD4-3F4B-1F8BC8E5D9CD"/>
+<colUsage columnID="315A6CD0-8181-DE8D-D463-1A0ACE4445E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9741D9DE-6F68-74AD-09AE-B0805A9E0CEC" name="tare_caes_tare_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>tare_caes_tare_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8077EC-1632-5DD4-3F4B-1F8BC8E5D9CD"/>
+<colUsage columnID="CF2FE0C0-C539-9324-D7F3-B1B28E14CD2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ED540E2-CE47-232A-0FDE-F429C2C8C8AE" name="tare_caes_camb_esta_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:05 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8077EC-1632-5DD4-3F4B-1F8BC8E5D9CD"/>
+<colUsage columnID="315A6CD0-8181-DE8D-D463-1A0ACE4445E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="635FA7F9-AB33-B0C9-A916-526248589878" name="tare_caes_tare_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:05 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8077EC-1632-5DD4-3F4B-1F8BC8E5D9CD"/>
+<colUsage columnID="CF2FE0C0-C539-9324-D7F3-B1B28E14CD2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="usua_inse_ck_0269" directorySegmentName="seg_21" id="130A18F7-B478-1882-0D9F-11F7DCB9E755">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_inter_015" directorySegmentName="seg_21" id="A16BBD85-484F-7B0A-9CEF-24DA25D3ABD7">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:45 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

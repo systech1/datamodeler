@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="52FC7038-7FBD-8D1E-D8C3-50324310AE1E" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="conversiones_monedas">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>conversiones_monedas</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="moneda_base" id="236DBEAC-691C-88CD-EA98-3E22F3C30877">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>moneda_base</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B68401C-9F06-77EF-F75B-2E66F5EB0437" referredColumn="68AB3B8D-1A1C-E94D-1454-7016F07048CD"/>
+</associations>
+</Column>
+<Column name="moneda_destino" id="4E067E64-CFBB-4CA8-0F69-DB38B4EB5C86">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>moneda_destino</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C462CAB-82A1-F7C7-E4DB-B879EF0139C1" referredColumn="68AB3B8D-1A1C-E94D-1454-7016F07048CD"/>
+</associations>
+</Column>
+<Column name="fecha" id="5A83C936-6E9D-B912-5733-F41F16522921">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>fecha</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="factor" id="5D0465CE-BD14-CD1D-3116-F0C2AF043E64">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>factor</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="FEE972D2-0481-4F2F-B249-FF0449B3B282">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="A346593E-2133-47A1-AD1E-47D0A0C58D8E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="D9F268BB-52B4-1480-B752-7FA9E19168EF">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="8AD80746-6F12-2ACB-BCEF-31AD2B373ECE">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>conversiones_monedas</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;conversiones_monedas_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDBC011D-D94E-D6D4-5242-5B47E168E808" name="conv_mone_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>conv_mone_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236DBEAC-691C-88CD-EA98-3E22F3C30877"/>
+<colUsage columnID="4E067E64-CFBB-4CA8-0F69-DB38B4EB5C86"/>
+<colUsage columnID="5A83C936-6E9D-B912-5733-F41F16522921"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27C1A6ED-1B42-8AAD-6EC8-80DC1B8583F6" name="conversiones_monedas_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>conversiones_monedas_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AD80746-6F12-2ACB-BCEF-31AD2B373ECE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61B13628-580A-EC3B-B06E-48FE50473FBA" name="conv_mone_dest_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>conv_mone_dest_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E067E64-CFBB-4CA8-0F69-DB38B4EB5C86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A40C2BA-A3D4-8C52-9F35-93E1D02EE7B9" name="conv_mone_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>conv_mone_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236DBEAC-691C-88CD-EA98-3E22F3C30877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A06255FD-F513-8C8E-2966-B55A255213B5" name="conv_mone_dest_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:58 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E067E64-CFBB-4CA8-0F69-DB38B4EB5C86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F585AEC7-7411-A43A-C81C-1DFE61DDFC17" name="conv_mone_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:58 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236DBEAC-691C-88CD-EA98-3E22F3C30877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="avcon_1138898000_inter_073" directorySegmentName="seg_4" id="4150707C-9FAE-0B2F-C1D0-C1A6219A5471">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="usua_inse_ck_0069" directorySegmentName="seg_4" id="CE605AF2-E90C-7790-0612-F34E0C80E41D">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:00 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

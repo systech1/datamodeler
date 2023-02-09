@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="721B87D6-4FAF-117B-CACC-FCE4CFB54DA7" name="paises">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>7B897528-1BEC-49E3-34A7-1C7E04ED69D4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pais" id="33723C7A-BC6D-84D9-954D-E0429A658ADD">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_paises_rowid</notNullConstraintName>
+</Column>
+<Column name="pais" id="7194CB5C-3FAC-46AF-ABE1-8E4208DFBBD0">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="BCB80A15-9BAA-9F55-49D6-362DB3B42216">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="9D398A5C-242F-9198-528D-CFAB656BB507">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>68663F84-33B1-EA55-CAB0-3E0E7746634C</domain>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="A35F1082-C3D6-9114-2CE7-8BADB1EE85DC">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario_insercion" id="F24E64AB-441D-E1B1-A210-3A8FAABD7492">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A402FAB8-6F51-0DA2-C243-DD02B2A5013F" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+<Column name="fecha_modificacion" id="0A81E36B-6266-AA7C-0F7E-408C704FC21A">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario_modificación" id="E0756348-B39A-F61C-F6C6-603438D382AE">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7DF78FF-BF7F-4B3B-DF44-112AECA6153A" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="492E3F57-2D70-4882-673C-E3FA2BF4C153" name="paises_PK">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33723C7A-BC6D-84D9-954D-E0429A658ADD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB0123A8-408C-5A24-C93E-C0EE93417BE4" name="paises_pais_UN">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:42:41 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7194CB5C-3FAC-46AF-ABE1-8E4208DFBBD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEC493CF-194A-B564-178D-890FBEDA3632" name="paises_usuarios_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 03:38:13 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F24E64AB-441D-E1B1-A210-3A8FAABD7492"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DED4F2A6-8852-8C59-BE7B-C5C0BC1994D6" name="paises_usuarios_FKv1">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 03:38:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0756348-B39A-F61C-F6C6-603438D382AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<impliedForeignKeys itemClass="oracle.dbtools.crest.model.design.relational.ImpliedForeignKey">
+<impliedForeignKey name="pais_usmo_fk" id="45BDD59D-0226-DF76-7EAB-A74B83DEAC07">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 02:48:16 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<localColumn>E0756348-B39A-F61C-F6C6-603438D382AE</localColumn>
+<referredTableID>0913C577-BD17-C120-A547-08AA6DAAD9C8</referredTableID>
+<referredColumnID>08181C74-518C-6B7B-F26F-BD4C14E26FD0</referredColumnID>
+<referredTableLongName>usuarios</referredTableLongName>
+<referredColumnName>id_usuario</referredColumnName>
+</impliedForeignKey>
+</impliedForeignKeys>
+</Table>

@@ -1,0 +1,227 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="E93E08D2-5DF9-ACD2-F47E-27341AE89F23" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="mensajes_listas_correos">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>mensajes_listas_correos</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="965A7C10-52A6-6ED9-93A8-89732A59FF0B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0289744C-B18D-9BE3-2597-BBD4075D1F2D" referredColumn="112935BD-FF31-8497-C9D5-AFD2E4D6A9D1"/>
+</associations>
+</Column>
+<Column name="lista_correo" id="1334423B-6CCD-68B0-8F96-FE507A8A75E1">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>lista_correo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0289744C-B18D-9BE3-2597-BBD4075D1F2D" referredColumn="0ED384F8-4AF5-7DF3-C55F-F0119E03E6A3"/>
+</associations>
+</Column>
+<Column name="tipo_proceso" id="31CD1FF8-033C-0DFF-C123-CAE061165891">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>tipo_proceso</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proveedor" id="0AD5BF9D-BF23-9BDC-CE8C-794E8ADE0DF6">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>proveedor</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="asunto" id="6287DE4A-2FF7-CABC-0B4C-E31C31B8145D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>asunto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2147483647</dataTypeSize>
+<ownDataTypeParameters>2147483647,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mensaje" id="5D41BA90-3A50-299F-F632-3CDEBE552B62">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>mensaje</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2147483647</dataTypeSize>
+<ownDataTypeParameters>2147483647,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="0769B619-B9F2-9F57-5781-F491B722A688">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="1E756407-90D3-A885-86A8-103CEFBE43AC">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="172640D2-0CB6-E4BD-5E4E-53766D819FBD" referredColumn="9A577C19-AA53-5890-D8A8-D660CF041AE3"/>
+</associations>
+</Column>
+<Column name="interfaz" id="C3C9AD9D-78BF-6006-2C94-3F7C0E79BC03">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="88CDBE92-E9BB-C266-9B58-F74B401761D2">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mensajes_listas_correos</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;mensajes_listas_correos_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B875A52B-4C9B-9343-0EF1-A55F0CF27D34" name="mens_lico_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>mens_lico_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="965A7C10-52A6-6ED9-93A8-89732A59FF0B"/>
+<colUsage columnID="1334423B-6CCD-68B0-8F96-FE507A8A75E1"/>
+<colUsage columnID="31CD1FF8-033C-0DFF-C123-CAE061165891"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F61EFA8-5F6C-18B0-BEF7-76BDD86697CF" name="mensajes_listas_correos_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>mensajes_listas_correos_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88CDBE92-E9BB-C266-9B58-F74B401761D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2E9FA16-959E-EE29-DAE9-F64F4E428CD3" name="mens_lico_punt_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="965A7C10-52A6-6ED9-93A8-89732A59FF0B"/>
+<colUsage columnID="1334423B-6CCD-68B0-8F96-FE507A8A75E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E71A8282-F01B-AE32-C95F-D9A753E6D582" name="mens_lico_usua_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E756407-90D3-A885-86A8-103CEFBE43AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="mens_lico_inter" directorySegmentName="seg_14" id="33D06C3E-A85B-1B79-B85A-23329E3CF3F2">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:25 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

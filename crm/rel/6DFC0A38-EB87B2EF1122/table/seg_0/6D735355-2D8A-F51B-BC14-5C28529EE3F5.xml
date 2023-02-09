@@ -1,0 +1,285 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D735355-2D8A-F51B-BC14-5C28529EE3F5" name="personas_ubicaciones">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<notes><![CDATA[Se agregan notas]]></notes>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>EA7A1A0F-C5DE-16EF-3A5D-40DE1925AF45</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="personas_ubicaciones_ID" id="75604259-13D6-F363-CE6D-4B412F64AF95">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>EA9B20AA-ABA6-A8C9-CF0D-56D7BBBB2D6C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_id_persona_ubicacion</notNullConstraintName>
+</Column>
+<Column name="personas_id_persona" id="0314C1A8-9695-E2C6-5626-1A252192E96E">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>EE226CE7-A417-EBCC-4E48-A34D4F4D8D86</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_id_persona</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="A041A2F9-43DA-5A47-C126-8772D2E73CEF" referredColumn="0B9A1709-48B2-425C-30AD-D60A5BF1C5E5"/>
+</associations>
+</Column>
+<Column name="ciudades_id_ciudad" id="4D6CF90B-99AB-1FBF-EC07-B7D71AD5632A">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>A1A61B85-91F1-DDAE-290A-F15FBE76E268</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_id_ciudad</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="A692C49B-BE97-76F1-2EB6-C3320F22C1CB" referredColumn="499B1EF1-58B6-CBF0-D518-E3117974F1DC"/>
+</associations>
+</Column>
+<Column name="direccion" id="9370DAB8-DF54-E55C-CF86-1FA53C902D85">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>1D8B0648-6032-D4FD-C452-067AD21FA064</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_direccion</notNullConstraintName>
+</Column>
+<Column name="celular" id="D6D4947D-6BA8-F035-53BD-2A63D0AE3C0E">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>3438CC75-D556-9EAB-2C28-846735F15DD6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24</dataTypeSize>
+<ownDataTypeParameters>24,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_celular</notNullConstraintName>
+</Column>
+<Column name="telefono1" id="A5C85995-7730-A4D1-AF9B-27F581B85DF2">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>968F17C7-2E67-D311-86F7-E9552BE96C9D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24</dataTypeSize>
+<ownDataTypeParameters>24,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono2" id="D888E3E9-7D37-E88F-D0B6-E55F9DCA819F">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>593AC38C-8765-8EBB-AC39-439FF1030C9B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24</dataTypeSize>
+<ownDataTypeParameters>24,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="AE8B679F-5A8E-227F-8572-2DFC1F1BB8B6">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>A48C99F0-AFF6-B81B-6740-0CD1CDBD8EF2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contacto" id="6BB8E13D-31C4-3EA2-9108-1054CCADCC26">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>55DCA106-ECF5-B677-0BB6-95C37ED1A0EC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="EA0AF025-B51A-B3FD-0F3E-42D949A1CFD3">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>4BF027F3-AD3B-9158-921F-BC7FC8F0AACD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>68663F84-33B1-EA55-CAB0-3E0E7746634C</domain>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_activo</notNullConstraintName>
+</Column>
+<Column name="fecha_insercion" id="EC8A629D-F315-CBF7-9CC1-D540E0B42D9B">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>D3226E69-172F-C60C-F9B9-8D80CD2F3984</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuarios_id_usuario" id="171B1663-F131-9FAB-388D-FA4080AE5AF9">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>7D54D0AD-0F34-FF82-6453-663A1861E6B3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_id_usuario_insercion</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="EDE40D95-671D-A8BA-0989-7E8EFBF14AD8" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+<Column name="fecha_modificacion" id="7A3F58C2-68C9-C5DF-7040-5E072ED34C6B">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>8F0331FA-08D2-6225-0C49-C9CE1AFB5D6A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuarios_id_usuario1" id="ECA782C1-CF43-7B9A-6D31-881E31CB1D43">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>74404A3C-2BAD-576A-6619-399D619693E5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_personas_ubicaciones_id_usuario_modificacion</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="80241ACD-2D09-14FD-94A8-1192EB1C8468" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56F3CDF5-797F-42F3-EC29-4C3D351CDA57" name="personas_ubicaciones_PK">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>ED7C9E86-D25A-74A4-AC26-EA2EFEA65430</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75604259-13D6-F363-CE6D-4B412F64AF95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA37A5A4-85DB-201E-CD43-B739B7FBEF41" name="personas_ubicaciones_usuarios_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:35:21 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="171B1663-F131-9FAB-388D-FA4080AE5AF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6150A354-30B4-C49B-5401-8324F0D22083" name="personas_ubicaciones_usuarios_FKv2">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:35:46 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECA782C1-CF43-7B9A-6D31-881E31CB1D43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B35ACF8-9D32-3424-486D-C28BD6B35CC9" name="personas_ubicaciones_ciudades_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:36:28 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D6CF90B-99AB-1FBF-EC07-B7D71AD5632A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="139BDF49-1631-550C-CB42-774B306C643B" name="personas_ubicaciones_personas_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:37:40 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0314C1A8-9695-E2C6-5626-1A252192E96E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

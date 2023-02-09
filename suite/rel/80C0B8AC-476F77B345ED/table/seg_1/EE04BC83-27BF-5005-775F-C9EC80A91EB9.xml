@@ -1,0 +1,228 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="EE04BC83-27BF-5005-775F-C9EC80A91EB9" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="descuentos_porcentajes">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>descuentos_porcentajes</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo_descuento" id="1E3E7F19-5195-3503-35B4-E7E32C7C54A4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>tipo_descuento</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7536A60A-9E22-E881-CC03-C85DC1FA8938" referredColumn="24911D8F-9D57-91D1-5C55-488C32898410"/>
+</associations>
+</Column>
+<Column name="descuento" id="7E7E80BA-10A7-0C3E-C6BB-10E09C137453">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>descuento</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7536A60A-9E22-E881-CC03-C85DC1FA8938" referredColumn="D5C3AA71-B649-2912-F713-54D94F5DF6DE"/>
+</associations>
+</Column>
+<Column name="porcentaje" id="0A7EAFBE-8FB3-B19E-DA5D-5D0886D8F6FD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>porcentaje</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B21FA745-2039-ABA6-2734-CA7D1F03BF63" referredColumn="A8F7F6DF-8F9F-C268-9761-7A1C3535D818"/>
+</associations>
+</Column>
+<Column name="valor_impuestos" id="ACCFE956-E15C-5631-3594-59B5B8BBEF09">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>valor_impuestos</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="878E8D4F-4DDC-D33A-74BB-34CE6DCEF92E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="E475F70E-8C94-F8BD-2056-B74FF82390AC">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48FF36C0-2785-8D7A-0A70-341A96D0B169" referredColumn="9A577C19-AA53-5890-D8A8-D660CF041AE3"/>
+</associations>
+</Column>
+<Column name="interfaz" id="5D492797-CDFE-8572-A285-6E204A80E22F">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="9554D1D8-589A-FD55-73A5-1DAAB5C538B4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>descuentos_porcentajes</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;descuentos_porcentajes_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D17F59C-8DFB-A93D-53E4-5DEE68F53C74" name="desc_porc_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>desc_porc_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E3E7F19-5195-3503-35B4-E7E32C7C54A4"/>
+<colUsage columnID="7E7E80BA-10A7-0C3E-C6BB-10E09C137453"/>
+<colUsage columnID="0A7EAFBE-8FB3-B19E-DA5D-5D0886D8F6FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE89C5DC-EDD3-9999-EA05-63D52C824932" name="descuentos_porcentajes_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>descuentos_porcentajes_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9554D1D8-589A-FD55-73A5-1DAAB5C538B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="548278D1-E21C-E316-0CBD-52C84266C483" name="desc_porc_porc">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>desc_porc_porc</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A7EAFBE-8FB3-B19E-DA5D-5D0886D8F6FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45BE6BF0-2124-980C-3522-056362FC015D" name="desc_porc_desc_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:58 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E3E7F19-5195-3503-35B4-E7E32C7C54A4"/>
+<colUsage columnID="7E7E80BA-10A7-0C3E-C6BB-10E09C137453"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39FF8917-DB7A-419C-5BC4-757E57848B27" name="desc_porc_porc_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:58 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A7EAFBE-8FB3-B19E-DA5D-5D0886D8F6FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17A94D81-6F6C-4F7C-B0F6-1D5603A0A6E0" name="desc_porc_usua_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:58 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E475F70E-8C94-F8BD-2056-B74FF82390AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="desc_porc_activ_001" directorySegmentName="seg_5" id="FF836D46-EEDD-B95A-38A9-A073471CB822">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'S'::text) OR ((interfaz)::text = 'N'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="usua_inse_ck_0083" directorySegmentName="seg_5" id="D468AA5E-0572-127F-2EFA-0E93A3CB194F">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:02 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

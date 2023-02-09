@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="429ED0CE-3DDF-1430-D5A7-91DF2A4E8236" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="cuentas_bancarias">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>cuentas_bancarias</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="banco" id="4B9E0E64-EF7E-7C44-6374-7E3CDC2FA946">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>cuentas_bancarias</sourceObjSchema>
+<sourceObjName>banco</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7B7A31E-56B3-7EDD-CDFB-39415AD98327" referredColumn="8C337809-58CF-7783-933F-D2596B2F72BE"/>
+</associations>
+</Column>
+<Column name="cuenta_bancaria" id="C7AC5F97-FCE4-4052-BE74-45A9B5279EF0">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>cuentas_bancarias</sourceObjSchema>
+<sourceObjName>cuenta_bancaria</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="A37934BF-8B84-ADF7-60D0-7E0A6EEFB2BA">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>cuentas_bancarias</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="80244491-B800-B123-4126-7A252109017B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>cuentas_bancarias</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="A8E3E41D-DDC2-76C0-CB7F-A860E6286C85">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>cuentas_bancarias</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="82239C9A-0964-62F7-9382-58CB3BA302A5">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>cuentas_bancarias</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;cuentas_bancarias_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB441DCD-97BC-1995-82E7-B7A56242D004" name="cuen_banca_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>cuen_banca_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9E0E64-EF7E-7C44-6374-7E3CDC2FA946"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0355C3B-C84F-EE05-5FE5-11DB1123E1B8" name="cuentas_bancarias_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>cuentas_bancarias_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82239C9A-0964-62F7-9382-58CB3BA302A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAC6B476-3D54-A3C9-2978-69E3CE86F301" name="cuen_banca_banc_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>cuen_banca_banc_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9E0E64-EF7E-7C44-6374-7E3CDC2FA946"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F999D0BB-4B16-DF11-2B98-ECDCCE372E62" name="cuen_banca_banc_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:58 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9E0E64-EF7E-7C44-6374-7E3CDC2FA946"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="usua_inse_ck_0075" directorySegmentName="seg_4" id="A81B7CB2-7328-3478-8CAF-8BB1C0690EC3">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_inter_026" directorySegmentName="seg_4" id="F7C7A156-FB6A-A8E4-FF88-C1B6A7AD39C3">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

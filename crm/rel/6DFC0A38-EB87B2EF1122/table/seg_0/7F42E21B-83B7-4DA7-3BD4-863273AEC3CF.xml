@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F42E21B-83B7-4DA7-3BD4-863273AEC3CF" name="ciudades">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<importedID>874A5529-B37B-2010-00A9-D3E9915A43FC</importedID>
+<ordsEnable>true</ordsEnable>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ciudad" id="499B1EF1-58B6-CBF0-D518-E3117974F1DC">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_departamento" id="C4038F52-86CC-D71E-C9C2-FD4194D74418">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="596FC8A9-C4AB-BCDD-7F52-516F800536D6" referredColumn="CD02432F-0298-B4F4-A2F5-B989D94B93DD"/>
+</associations>
+</Column>
+<Column name="ciudad" id="F0BB5310-E150-65B3-D639-D26CFA144A88">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="83F13412-D0BF-B014-E028-1038D48EBDDA">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="2454C2B7-764A-EFB6-F294-86F49F08EF83">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>68663F84-33B1-EA55-CAB0-3E0E7746634C</domain>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="312E40B8-7AF6-5E76-66E9-6028517B22E1">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario_insercion" id="F8BA0F3D-EA2E-E6FC-F470-047CCD21C441">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D62EB15E-8399-A18E-2D91-8A00951A80E1" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+<Column name="fecha_modificacion" id="5F60A7DF-564D-16D7-039E-FFB6BB0DCFB9">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario_modificacion" id="41592C2B-5812-A38D-F231-3F1B97A58D60">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC3B050C-199C-E2BA-806F-00227C75DDC0" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7085724-4131-E330-67EE-EC4E684E3F2F" name="ciudades_pk">
+<sourceDDLFile>ddl_crm.ddl</sourceDDLFile>
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="499B1EF1-58B6-CBF0-D518-E3117974F1DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8D2FEBA-3AF5-2FCC-3566-AAA7C15C5D98" name="ciudades__UN">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 02:22:14 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4038F52-86CC-D71E-C9C2-FD4194D74418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB1BFCD3-FF24-B078-B8BD-68C3E9AC6A8E" name="ciudades_departamentos_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 03:42:31 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4038F52-86CC-D71E-C9C2-FD4194D74418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62CC8D5E-8AE7-50BD-A666-C9B7876FA2AD" name="ciudades_usuarios_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 03:55:16 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8BA0F3D-EA2E-E6FC-F470-047CCD21C441"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DB106A0-00BF-D896-AD37-66813AABC747" name="ciudades_usuarios_FKv1">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 03:55:16 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41592C2B-5812-A38D-F231-3F1B97A58D60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

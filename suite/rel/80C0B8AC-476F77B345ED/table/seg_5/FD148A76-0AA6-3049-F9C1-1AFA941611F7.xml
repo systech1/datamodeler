@@ -1,0 +1,462 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_5" id="FD148A76-0AA6-3049-F9C1-1AFA941611F7" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="saldos_bodegas">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>saldos_bodegas</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="43AA586C-33FC-37FE-6451-23BEF7EF5340">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2F38645-DF3F-78A2-4E87-C17625FF2B56" referredColumn="C127F1BA-234C-710F-F4DF-18D2CB055DEC"/>
+</associations>
+</Column>
+<Column name="bodega" id="92004408-C8EE-3E76-3348-23526A2A1078">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>bodega</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2F38645-DF3F-78A2-4E87-C17625FF2B56" referredColumn="C1CCE163-EC02-7FB3-1CBA-91F77AE481D2"/>
+</associations>
+</Column>
+<Column name="articulo" id="54B74520-2BF5-9A17-2724-1B2C5F6BDB21">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>articulo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="441D8502-D28A-032A-4724-3F88EBF0ADCB" referredColumn="B916FE33-3302-61F4-E956-FE59A7D20BC5"/>
+</associations>
+</Column>
+<Column name="cantidad" id="219C2EA7-EF43-4177-65F4-F270A8DE9689">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>cantidad</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad_minima" id="877ED35A-2D47-D700-0F69-BF690314154E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>cantidad_minima</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad_maxima" id="7F91845F-7206-E613-5268-6D2085437A16">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>cantidad_maxima</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo" id="D803C432-2B94-D4C8-7479-18590DD2A3AF">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>costo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo_ajustado" id="A30D0C09-DD32-9057-A4D3-3C4E4EF85693">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>costo_ajustado</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo_historico" id="EA55EFB3-ADCD-A1BB-D4C8-E37E6D9B856F">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>costo_historico</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_peso_bruto" id="1E692F85-AF03-23A8-BB18-0F30823A210D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>total_peso_bruto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_peso" id="3633DC19-0DDF-BE2F-F10B-11A2637B413E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>total_peso</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_volumen" id="0F2FCCAC-B24A-513E-516C-BD967F85B8AF">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>total_volumen</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="92A091E8-3BA9-0C48-D2CB-02CEE252CFCF">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="E5A09805-941B-D07A-CD59-7CE8D9B84050">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="35E3B362-0BDD-53D0-4CBA-11A9A817BE69">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad_reorden" id="518C2FF4-424D-DD00-C9F6-D3B5CA97C94B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>cantidad_reorden</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dias_promedio" id="F566F78E-EAE4-42A1-1A3B-AFB9C9EDDC77">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>dias_promedio</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_dias_deseados" id="7DB7A3E7-D6F0-3C7F-48DC-2A0318A13863">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>min_dias_deseados</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_dias_deseados" id="F279543C-5F03-5102-00F5-A9E71FE2251B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>max_dias_deseados</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="612EE528-E522-92C0-BCE6-39B1410EC495">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>saldos_bodegas</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;saldos_bodegas_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B375E063-8D9B-EC6F-D888-3A52D7D07046" name="sald_bode_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sald_bode_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43AA586C-33FC-37FE-6451-23BEF7EF5340"/>
+<colUsage columnID="92004408-C8EE-3E76-3348-23526A2A1078"/>
+<colUsage columnID="54B74520-2BF5-9A17-2724-1B2C5F6BDB21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5AE8075-E4E4-2083-FF2E-6DE04197BDD3" name="saldos_bodegas_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>saldos_bodegas_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="612EE528-E522-92C0-BCE6-39B1410EC495"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CB50242-8D79-15EB-015E-D2F2889DED7C" name="sald_bode_arti_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sald_bode_arti_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54B74520-2BF5-9A17-2724-1B2C5F6BDB21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6FFDA4D-5D5C-C5B5-504C-BC54592A15A2" name="sald_bode_bode_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sald_bode_bode_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43AA586C-33FC-37FE-6451-23BEF7EF5340"/>
+<colUsage columnID="92004408-C8EE-3E76-3348-23526A2A1078"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7B24FBF-D33E-9476-9E89-CDF51F86F184" name="sald_bode_ind01">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>sald_bode_ind01</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43AA586C-33FC-37FE-6451-23BEF7EF5340"/>
+<colUsage columnID="54B74520-2BF5-9A17-2724-1B2C5F6BDB21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AF84AA4-9194-2666-F012-98C6F3B012D1" name="sald_bode_arti_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:04 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54B74520-2BF5-9A17-2724-1B2C5F6BDB21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAD70B1B-0A01-E5FD-79C7-327762D48D47" name="sald_bode_bode_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:04 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43AA586C-33FC-37FE-6451-23BEF7EF5340"/>
+<colUsage columnID="92004408-C8EE-3E76-3348-23526A2A1078"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="sald_bode_ck05" directorySegmentName="seg_18" id="02E1C833-A65B-2D1C-3B18-A9129C897963">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((costo_ajustado >= (0)::numeric))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="sald_bode_ck06" directorySegmentName="seg_18" id="01C749B0-3251-A1BD-8CB7-E8416FF2B759">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((costo_historico >= (0)::numeric))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="sald_bode_ck01" directorySegmentName="seg_18" id="0B838AF0-3F03-D7EC-7966-72A0D839FF06">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((cantidad >= (0)::numeric))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="sald_bode_ck03" directorySegmentName="seg_18" id="74A0D3FF-CA23-E926-7D79-5E164CABF768">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((cantidad_maxima >= (0)::numeric))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="usua_inse_ck_0245" directorySegmentName="seg_18" id="8008BF00-D1AD-103E-E2B1-041D729E9C60">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="sald_bode_ck02" directorySegmentName="seg_18" id="3E7A776B-3789-180C-4956-647C9D6D920E">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((cantidad_minima >= (0)::numeric))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="sald_bode_ck04" directorySegmentName="seg_18" id="E5D46A72-23A2-062D-A04A-1EA15A01EF3C">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((costo >= (0)::numeric))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_inter_083" directorySegmentName="seg_18" id="8C74AE27-9109-D2DC-20CD-0355D9A11CBF">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:39 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

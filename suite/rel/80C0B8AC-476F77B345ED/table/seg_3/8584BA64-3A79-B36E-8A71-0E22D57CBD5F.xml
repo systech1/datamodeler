@@ -1,0 +1,207 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="8584BA64-3A79-B36E-8A71-0E22D57CBD5F" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="excepciones_prepedidos_procesados">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>excepciones_prepedidos_procesados</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:16 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="excepcion_prepedido" id="9FD9BAAF-0BE8-E9C4-71F5-1387F154A030">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>excepciones_prepedidos_procesados</sourceObjSchema>
+<sourceObjName>excepcion_prepedido</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DA50914-264F-5163-139A-7CE1C667AB70" referredColumn="2B84FD20-9C43-2681-838E-F1BA6299D327"/>
+</associations>
+</Column>
+<Column name="punto" id="673072C9-0228-CDDB-634B-198A232A959A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>excepciones_prepedidos_procesados</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D261BEDB-6FE5-454A-3B85-744DF9387F13" referredColumn="AD812BCE-DAE4-1FD3-4422-915D9F322E4A"/>
+</associations>
+</Column>
+<Column name="fecha" id="46378745-8EE9-96B3-A1C4-BA56B30411DD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>excepciones_prepedidos_procesados</sourceObjSchema>
+<sourceObjName>fecha</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="85298E9C-41D0-E359-B832-027E6A6B645D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>excepciones_prepedidos_procesados</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="231A36EC-3113-71F8-09D4-EC2D16575239">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>excepciones_prepedidos_procesados</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="405E4855-04B5-BB5B-F003-D353FDF3B675">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>excepciones_prepedidos_procesados</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="833616B9-1406-728E-223C-E1CEA83286E4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>excepciones_prepedidos_procesados</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;excepciones_prepedidos_procesados_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9AB1BF8-B2DC-C6F6-1299-D91F21D0E84E" name="exce_prep_proc_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>exce_prep_proc_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FD9BAAF-0BE8-E9C4-71F5-1387F154A030"/>
+<colUsage columnID="673072C9-0228-CDDB-634B-198A232A959A"/>
+<colUsage columnID="46378745-8EE9-96B3-A1C4-BA56B30411DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="502D3AEC-25D0-4448-4AD5-6B7A4F2B7334" name="excepciones_prepedidos_procesados_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>excepciones_prepedidos_procesados_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="833616B9-1406-728E-223C-E1CEA83286E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4142BA8-4953-A0D2-A8E5-C45998A143B9" name="exce_prep_proc_expr_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>exce_prep_proc_expr_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FD9BAAF-0BE8-E9C4-71F5-1387F154A030"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8370D6A-22E6-3B67-6F5B-748395740A45" name="exce_prep_proc_punt_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>exce_prep_proc_punt_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="673072C9-0228-CDDB-634B-198A232A959A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DBB2AB0-EE54-479B-E6E4-89A6CCC98EFD" name="exce_prep_proc_expr_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FD9BAAF-0BE8-E9C4-71F5-1387F154A030"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FA42193-8D9E-844B-9D12-9CB548FE1B0D" name="exce_prep_proc_punt_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="673072C9-0228-CDDB-634B-198A232A959A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="exce_prep_proc_inte_ck" directorySegmentName="seg_11" id="A4D9D41C-81EA-93BD-1840-03107AB02B51">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="exce_prep_proc_usin_ck" directorySegmentName="seg_11" id="2C793E22-96A8-B138-A02C-4898592FAB86">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:17 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

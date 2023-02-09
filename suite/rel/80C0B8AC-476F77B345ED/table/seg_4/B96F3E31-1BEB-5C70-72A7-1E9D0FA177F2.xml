@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="B96F3E31-1BEB-5C70-72A7-1E9D0FA177F2" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="mi_cantidad_disponible">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>mi_cantidad_disponible</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:26 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cantidad_disponible" id="5D16D138-1205-12E5-4F6F-00CEF508C9DA">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mi_cantidad_disponible</sourceObjSchema>
+<sourceObjName>cantidad_disponible</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:26 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="0E3EFF50-B654-9A6B-231E-119D32F55155">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>mi_cantidad_disponible</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:26 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;mi_cantidad_disponible_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="625BBAC5-FD30-B49E-90E2-45A1158F32E4" name="mi_cantidad_disponible_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>mi_cantidad_disponible_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:26 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E3EFF50-B654-9A6B-231E-119D32F55155"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

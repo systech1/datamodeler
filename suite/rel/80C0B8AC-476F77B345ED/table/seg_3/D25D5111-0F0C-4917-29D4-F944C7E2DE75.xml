@@ -1,0 +1,460 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="D25D5111-0F0C-4917-29D4-F944C7E2DE75" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="gastos_entradas">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>gastos_entradas</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="CC672263-EA19-0BE4-FEDE-C02B13EAAECF">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D657CD8-1B1D-F17A-1B87-F2D9747C94E6" referredColumn="8FFFFF36-8FC6-7C04-1EBA-D85D8824AED0"/>
+</associations>
+</Column>
+<Column name="entrada" id="8B951ADD-D08D-FE9B-103D-B94B4195C99F">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>entrada</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D657CD8-1B1D-F17A-1B87-F2D9747C94E6" referredColumn="6BBF86D4-7FDE-AF28-7E57-C9C89FA1C1EA"/>
+</associations>
+</Column>
+<Column name="secuencia" id="199ACAC3-067D-15C5-1E14-DF38C4620E0F">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>secuencia</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_gasto_entrada" id="1DA2CFE3-90F5-3FB2-B282-D154BD9C5780">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>tipo_gasto_entrada</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60458630-CAAF-2064-5375-3D35A1AB11E1" referredColumn="C6E05972-F87D-68A2-919F-4535599DF34E"/>
+</associations>
+</Column>
+<Column name="proveedor" id="F663A9F6-C656-B9E1-A7C6-001E002B6773">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>proveedor</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3D8FF74-AB36-92BF-0A5D-D7E574F979C5" referredColumn="90FA134C-A01A-002F-9A2C-117EA120BDF0"/>
+</associations>
+</Column>
+<Column name="documento_soporte" id="BBF3F83A-81BC-9407-CCC7-0E95BB8DD4BD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>documento_soporte</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21</dataTypeSize>
+<ownDataTypeParameters>21,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_documento_soporte" id="B03A7A97-481F-4ED9-FF88-0ECDEAEADA82">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>fecha_documento_soporte</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones" id="DFC3A49A-E760-4AC3-055B-FB13C9305216">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>observaciones</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="moneda" id="6D7A64A3-6513-3AEB-E7F0-4F44821C9200">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>moneda</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7E52CE4-9EE4-F135-3632-B6745E389017" referredColumn="68AB3B8D-1A1C-E94D-1454-7016F07048CD"/>
+</associations>
+</Column>
+<Column name="valor_tasa_cambio" id="80CFD5FE-CD08-8EF2-01F1-571A70978D3A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>valor_tasa_cambio</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_moneda" id="85C929DA-868B-04C0-9523-41C697D54329">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>valor_moneda</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_iva_moneda" id="30B387CF-241B-14E6-01F1-18BC0DB799E2">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>valor_iva_moneda</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_total_moneda" id="20A1DEE0-14EE-81B6-309A-8A624E8BC9C4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>valor_total_moneda</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_base" id="9B83E75F-AA4D-34BA-91D5-B73E851F86C9">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>valor_base</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_iva" id="921D330C-EB32-4681-3E7C-184306EABCBE">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>valor_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_total" id="2F9982EC-73FB-A8A8-53E1-8832125FF84B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>valor_total</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="4C429CBD-6078-8010-E743-6F27973A9CC8">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="380D165E-2A68-6010-1560-194724E02894">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="8E4879A0-00CC-A099-69E4-C8DB44A12A2E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="81B98FBE-B63C-DDEF-DAF0-D6CCCBB12C9E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>gastos_entradas</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;gastos_entradas_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE28479D-C6F0-B424-8DBA-267DDD0BA223" name="gast_entr_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>gast_entr_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC672263-EA19-0BE4-FEDE-C02B13EAAECF"/>
+<colUsage columnID="8B951ADD-D08D-FE9B-103D-B94B4195C99F"/>
+<colUsage columnID="199ACAC3-067D-15C5-1E14-DF38C4620E0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C7DB99A-9DB1-3E59-38E6-5573DDE1C832" name="gastos_entradas_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>gastos_entradas_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81B98FBE-B63C-DDEF-DAF0-D6CCCBB12C9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB3BBEF2-6D23-A0D1-675F-2BCA9FC9C222" name="gast_entr_entr_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>gast_entr_entr_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC672263-EA19-0BE4-FEDE-C02B13EAAECF"/>
+<colUsage columnID="8B951ADD-D08D-FE9B-103D-B94B4195C99F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F40BDB5-3005-9293-66CF-610C67860558" name="gast_entr_mone_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>gast_entr_mone_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D7A64A3-6513-3AEB-E7F0-4F44821C9200"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="046CE2EA-EF4C-06E4-C573-7DC3C36A45AA" name="gast_entr_prov_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>gast_entr_prov_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F663A9F6-C656-B9E1-A7C6-001E002B6773"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA9986D8-BA08-F13C-E87D-2345D3D6A29F" name="gast_entr_tipo_gaen_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>gast_entr_tipo_gaen_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DA2CFE3-90F5-3FB2-B282-D154BD9C5780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E006E25-1B3F-84CC-7AF5-32847A555360" name="gast_entr_entr_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC672263-EA19-0BE4-FEDE-C02B13EAAECF"/>
+<colUsage columnID="8B951ADD-D08D-FE9B-103D-B94B4195C99F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98F55390-CDD7-252B-61DE-25CF2166D199" name="gast_entr_mone_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D7A64A3-6513-3AEB-E7F0-4F44821C9200"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1EB0DF8-85FA-3461-C8DF-FEA3C867E83D" name="gast_entr_prov_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F663A9F6-C656-B9E1-A7C6-001E002B6773"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77601718-8BEC-C160-824E-30ED6B2CF5DA" name="gast_entr_tipo_gaen_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:01 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DA2CFE3-90F5-3FB2-B282-D154BD9C5780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="avcon_1138898400_inter_076" directorySegmentName="seg_12" id="C09BF21F-A384-CE4A-8C95-743C474A2809">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="usua_inse_ck_0163" directorySegmentName="seg_12" id="F80320D5-97BA-17BE-6F52-CC0DBEAB2E75">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:18 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

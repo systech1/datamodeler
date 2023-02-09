@@ -1,0 +1,473 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="45E82426-766E-824A-41A3-BBFC780E32DE" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="pedidos_descuentos">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pedidos_descuentos</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="1EEC4430-FEA8-A7C7-54FC-FC8A5D5C5541">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C33CF0CE-B40C-EAF8-06DC-66A9297ADC1A" referredColumn="409FF9C6-7F35-AA9F-01DB-E5281E5E3D8D"/>
+</associations>
+</Column>
+<Column name="pedido" id="08E98876-66EF-78F3-62D3-FD5E3D73B4E3">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>pedido</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21</dataTypeSize>
+<ownDataTypeParameters>21,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C33CF0CE-B40C-EAF8-06DC-66A9297ADC1A" referredColumn="BDA29C3E-BF97-3B27-EAE7-01A0ACF2E385"/>
+</associations>
+</Column>
+<Column name="secuencia" id="C069985C-24C8-783A-4C98-6059770241E0">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>secuencia</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C33CF0CE-B40C-EAF8-06DC-66A9297ADC1A" referredColumn="CD9CDF5C-3722-73B5-7300-FCC7BD119376"/>
+</associations>
+</Column>
+<Column name="secuencia_descuento" id="1D0D818D-1AD2-09B5-AD39-4C17FD91296E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>secuencia_descuento</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_descuento" id="D08A3913-65D9-FD33-A544-CEBB76CFC235">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>tipo_descuento</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4DA1FFF-1B8A-E560-9481-7C6B7F8AA675" referredColumn="24911D8F-9D57-91D1-5C55-488C32898410"/>
+</associations>
+</Column>
+<Column name="descuento" id="7DD3DE96-4F38-32DE-7CCD-81D7A91B4B0E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>descuento</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4DA1FFF-1B8A-E560-9481-7C6B7F8AA675" referredColumn="D5C3AA71-B649-2912-F713-54D94F5DF6DE"/>
+</associations>
+</Column>
+<Column name="articulo" id="7E1BC3C8-2A4C-B485-1D80-79F610115447">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>articulo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="059B2AEB-2489-E3C4-C07C-8CFC407C756A" referredColumn="B916FE33-3302-61F4-E956-FE59A7D20BC5"/>
+</associations>
+</Column>
+<Column name="cantidad" id="59A68C37-40DB-C959-B351-A48B4C76D7A4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>cantidad</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="porcentaje_descuento" id="842D0F1E-5C1A-B5F1-0025-2385A0BAB993">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>porcentaje_descuento</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="5419C9C3-8EE1-4083-6ED4-8757178581DA">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>valor</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_descuento" id="08C896FB-0949-BA8B-528E-0A87F0C14CA4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>valor_descuento</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_base" id="77D93CD3-D723-AE50-1BF0-860C7E072BBD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>valor_base</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_porcentaje_iva" id="4C7262C1-AF7A-4BE4-282C-2B8AD7A6A75E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>valor_porcentaje_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_iva" id="46B26157-9CEF-DA17-5B34-2B24FAE99F36">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>valor_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_total" id="033DAA08-6341-AB50-F3F2-96146D015B59">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>valor_total</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="67804A11-BAC2-9FA8-6F66-626A03C364F5">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="DF84FA21-C45E-3DB1-91ED-384D734EEA0B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="3E27078A-14C3-3D82-42B0-52D9671A03A1">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="articulo_contenedor" id="264F76D7-745E-FF1A-EB33-28CEE236F45A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>articulo_contenedor</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21</dataTypeSize>
+<ownDataTypeParameters>21,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad_solicitada" id="CB8E5E01-FF0C-EF2F-AE2F-6D4C137B420A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>cantidad_solicitada</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,20,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="359290F6-FED9-30F3-5E15-CA96D3085A1C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>pedidos_descuentos</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;pedidos_descuentos_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D45DE1B8-4339-E010-5B8B-AA06EFD5794E" name="pedi_desc_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pedi_desc_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EEC4430-FEA8-A7C7-54FC-FC8A5D5C5541"/>
+<colUsage columnID="08E98876-66EF-78F3-62D3-FD5E3D73B4E3"/>
+<colUsage columnID="C069985C-24C8-783A-4C98-6059770241E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FB58296-F6D2-8116-B060-EAA68CEA961D" name="pedidos_descuentos_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pedidos_descuentos_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="359290F6-FED9-30F3-5E15-CA96D3085A1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71C66B02-16F0-AF87-3A73-A0ED11EF4D25" name="pedi_desc_arti_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pedi_desc_arti_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E1BC3C8-2A4C-B485-1D80-79F610115447"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF81B533-F2D4-AB61-F117-C5B37A3270DF" name="pedi_desc_desc_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pedi_desc_desc_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D08A3913-65D9-FD33-A544-CEBB76CFC235"/>
+<colUsage columnID="7DD3DE96-4F38-32DE-7CCD-81D7A91B4B0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D8CE801-2C5F-F8AC-65EA-66CD3FCC4D80" name="pedi_desc_ind01">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pedi_desc_ind01</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EEC4430-FEA8-A7C7-54FC-FC8A5D5C5541"/>
+<colUsage columnID="08E98876-66EF-78F3-62D3-FD5E3D73B4E3"/>
+<colUsage columnID="7E1BC3C8-2A4C-B485-1D80-79F610115447"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AA9A4EE-67CF-B919-A1BC-E6F03B5E48E6" name="pedi_desc_pedi_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>pedi_desc_pedi_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EEC4430-FEA8-A7C7-54FC-FC8A5D5C5541"/>
+<colUsage columnID="08E98876-66EF-78F3-62D3-FD5E3D73B4E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C728A317-204A-BBAA-99A0-6C752D0D07CF" name="pedi_desc_arti_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:03 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E1BC3C8-2A4C-B485-1D80-79F610115447"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7283212-C777-DBE8-185F-5AE5273662B5" name="pedi_desc_desc_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:03 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D08A3913-65D9-FD33-A544-CEBB76CFC235"/>
+<colUsage columnID="7DD3DE96-4F38-32DE-7CCD-81D7A91B4B0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7850F79A-BF9D-B537-4E34-4C5FCD9D97EC" name="pedi_desc_depe_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:03 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EEC4430-FEA8-A7C7-54FC-FC8A5D5C5541"/>
+<colUsage columnID="08E98876-66EF-78F3-62D3-FD5E3D73B4E3"/>
+<colUsage columnID="C069985C-24C8-783A-4C98-6059770241E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="pedi_desc_ck01" directorySegmentName="seg_15" id="D76B8FBF-A3B4-C1AB-7B94-CCF0E2592D4F">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((cantidad >= (0)::numeric))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="usua_inse_ck_0205" directorySegmentName="seg_15" id="9BFE4E91-D963-7E67-6F68-FC8322131657">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898365_inter_079" directorySegmentName="seg_15" id="9E56F46B-3BF2-60F8-D97E-EA03B39265F3">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:28 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

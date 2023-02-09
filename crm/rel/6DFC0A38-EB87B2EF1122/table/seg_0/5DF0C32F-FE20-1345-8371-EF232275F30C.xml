@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5DF0C32F-FE20-1345-8371-EF232275F30C" name="tratos">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:46:44 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<abbreviation>tratos</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_trato" id="4B8A521D-D803-FA82-CF71-4DE3ED5B95A1">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:47:20 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trato" id="9D7CA06C-587A-52B3-62F0-C75227D239F4">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:48:16 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="BE86BE0E-3659-ED7F-88C0-6415338DD2D6">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:51:56 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="0DD115ED-3A9F-A3FD-6BAF-FEA79E63A19A">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:49:48 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario_insercion" id="8A27E154-E85D-D0A9-C398-81811525A424">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:49:48 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72C6A88C-9BB5-A3A3-3E23-0EE0D6EDF96A" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+<Column name="fecha_modificacion" id="90917613-2A69-1B3E-6583-E1FE0E2CA316">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:49:48 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>0EB06378-6E3F-16A0-2DE1-4FF5EC1652F5</domain>
+<defaultValue>datetime</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario_modificacion" id="800CC131-BAD0-89A8-D003-7C1D9685D73A">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:49:48 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<domain>8F7BA10A-4FBD-9F72-B3C5-7C8926307AC3</domain>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="899771B3-B6B8-84A5-6E8C-7F077AF39C75" referredColumn="08181C74-518C-6B7B-F26F-BD4C14E26FD0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2FCD453-6266-589B-2773-F08B8910F719" name="tratos_PK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:47:20 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B8A521D-D803-FA82-CF71-4DE3ED5B95A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07A1D99B-A943-6B59-64A6-33F9D75ACA1C" name="tratos__UN">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:51:16 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D7CA06C-587A-52B3-62F0-C75227D239F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06206656-F3F7-3C53-C718-5DAC8798BAED" name="tratos_usuarios_FK">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:53:04 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A27E154-E85D-D0A9-C398-81811525A424"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE1F7285-2AC3-106F-1A24-72CA8C55F4A6" name="tratos_usuarios_FKv1">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 21:55:00 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="800CC131-BAD0-89A8-D003-7C1D9685D73A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

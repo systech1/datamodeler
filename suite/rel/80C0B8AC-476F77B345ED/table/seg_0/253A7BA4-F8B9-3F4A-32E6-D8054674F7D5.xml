@@ -1,0 +1,638 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="253A7BA4-F8B9-3F4A-32E6-D8054674F7D5" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="articulos_contables">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>articulos_contables</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="articulo" id="6ECF5BA6-0E31-7D2A-9CD4-4E77E7EE4EDD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>articulo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E4E6B11-6072-AB03-131E-AB85E22A2EF5" referredColumn="B916FE33-3302-61F4-E956-FE59A7D20BC5"/>
+</associations>
+</Column>
+<Column name="cuenta_ingreso" id="5E1AC14D-746B-9E1A-F305-9A807D14A559">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_ingreso</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_ingreso" id="E4245F7E-12E6-E95B-F14C-DEEAFB365B03">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_ingreso</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_ingreso" id="E6B78CE1-0BC6-B2C3-8D8E-CB6F3ABAC02D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_ingreso</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;C&apos;::character varying)::tipo_c_d</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_devolucion" id="8E0CD280-EC38-6568-8ABB-A51A554FD5C2">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_devolucion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_devolucion" id="B9BA06D2-236F-5434-D888-B12CB56F2D5B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_devolucion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_devolucion" id="304BACBA-8DC9-14BC-AC26-46983A10D412">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_devolucion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;D&apos;::character varying)::tipo_d_c</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_iva" id="E25A0A42-E75C-315A-D56B-C0402E706B5A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_iva" id="D5396662-4B30-1F12-705D-E9C9A40FA836">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_iva" id="06C7DBCB-1ADC-8D01-615D-E70B783703F4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;C&apos;::character varying)::tipo_c_d</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_costo" id="F71D6AB4-9096-1B34-80F4-891C443DB9B8">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_costo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_costo" id="0D912D8B-6421-9249-5147-DDE970385C08">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_costo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_costo" id="497ADD36-71BD-A033-16AD-715DBAD21178">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_costo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;D&apos;::character varying)::tipo_d_c</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_inventario" id="852EF938-EF4F-1E07-15C0-C6424636790A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_inventario</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_inventario" id="0AD39C0A-6FCB-7E54-FCD5-213BEA3B7127">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_inventario</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_inventario" id="05B7EC17-A62A-FD6A-1F5B-F68208527234">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_inventario</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;C&apos;::character varying)::tipo_c_d</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_ajuste" id="B9F2EC9E-9E44-E38A-4CA0-3D653C07C6E6">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_ajuste</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_ajuste" id="39D32A07-BFD8-D296-BB56-74A3BDFEF1BD">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_ajuste</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_ajuste" id="63478911-6A34-4B65-79E7-0228EC23FB5E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_ajuste</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;D&apos;::character varying)::tipo_d_c</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_devolucion_iva" id="336A4FC0-FDD2-2FB6-965F-9EA8B912274C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_devolucion_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_devolucion_iva" id="49094A30-79B3-6FEA-9CAF-5D60D3B87BC4">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_devolucion_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_devolucion_iva" id="EF627F79-F903-259D-A91D-90256031B6D0">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_devolucion_iva</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;D&apos;::character varying)::tipo_d_c</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_diferido" id="FB9BD9B2-B21B-D750-85C6-106D10446286">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_diferido</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_diferido" id="95E7F71E-7823-8792-7413-C2CB5A1E9AE2">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_diferido</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_diferido" id="96BBCA8B-D978-0C0E-C2BB-ABDDB9E62A7D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_diferido</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;C&apos;::character varying)::tipo_c_d</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_iva_descontable" id="AFF53734-365B-BB55-CDA1-6FCA173EE42D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_iva_descontable</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_iva_descontable" id="66DBD705-1E2F-523F-6CD2-3A179E71041C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_iva_descontable</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_iva_descontable" id="D279B7F3-70CB-29D0-B2BB-202ABABBD394">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_iva_descontable</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;D&apos;::character varying)::tipo_d_c</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_retencion" id="CDDE118A-77AA-6B5F-F850-7D3DBDB8851D">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>cuenta_retencion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino_retencion" id="6F7134F7-76A2-3DFA-1A90-2EB32ECADE70">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>destino_retencion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_retencion" id="29C2119E-DD37-0262-06A9-1EA827006960">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>tipo_retencion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;D&apos;::character varying)::tipo_d_c</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_insercion" id="8519B2C0-A71C-B291-85D5-0BA2B0F3E8E9">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="2CBCFF06-94B7-768A-12AC-21E5C2541E08">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="93D3CC9C-3E5B-24D9-E15A-90EA5DD01818">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centro_costo" id="80A9FE54-6507-375A-D4DB-BDE082F8784C">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>centro_costo</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="18717ED9-B4B5-FB4D-CD2D-3604A99636BE">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>articulos_contables</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;articulos_contables_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D59B14DF-7BD9-C799-BDCF-1F4F02C21699" name="art_contab_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>art_contab_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECF5BA6-0E31-7D2A-9CD4-4E77E7EE4EDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7DB3738-7595-E84D-88AD-3FB7248CB6B3" name="articulos_contables_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>articulos_contables_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18717ED9-B4B5-FB4D-CD2D-3604A99636BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FB3D8C6-A592-8CB6-C910-E5D2CD6800B7" name="art_contab_arti_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>art_contab_arti_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECF5BA6-0E31-7D2A-9CD4-4E77E7EE4EDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CE287E1-3653-79ED-EFCC-69EA649F1865" name="art_contab_arti_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:56 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECF5BA6-0E31-7D2A-9CD4-4E77E7EE4EDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="avcon_1138898359_inter_040" directorySegmentName="seg_1" id="1136417E-9E36-D591-D956-4E219921C6C6">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__007" directorySegmentName="seg_1" id="18D339D8-A3CA-57A4-EEE0-F7723EF6A21C">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_iva)::text = 'C'::text) OR ((tipo_iva)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__013" directorySegmentName="seg_1" id="37577C12-BA6D-023A-114A-E90A44A5B6C5">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_iva_descontable)::text = 'C'::text) OR ((tipo_iva_descontable)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__009" directorySegmentName="seg_1" id="517E39A4-C87F-749C-B768-6E79A647953A">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_inventario)::text = 'C'::text) OR ((tipo_inventario)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="usua_inse_ck_0014" directorySegmentName="seg_1" id="E5A74B92-D8AE-417B-0EAE-BBC426E5F9BB">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__005" directorySegmentName="seg_1" id="DA332575-4AA1-E5A4-9E28-96320AD6B71E">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_ingreso)::text = 'C'::text) OR ((tipo_ingreso)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__006" directorySegmentName="seg_1" id="CBC4A095-3315-D980-2CD9-16D947C68845">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_devolucion)::text = 'C'::text) OR ((tipo_devolucion)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__012" directorySegmentName="seg_1" id="BF951393-755B-E4E1-D537-4E906D456101">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_diferido)::text = 'C'::text) OR ((tipo_diferido)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__010" directorySegmentName="seg_1" id="A928B044-E440-54F2-BB14-C06F5D2B5D31">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_ajuste)::text = 'C'::text) OR ((tipo_ajuste)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__011" directorySegmentName="seg_1" id="04E6BB2A-3D56-6C57-D91C-19803FDD2CE4">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_devolucion_iva)::text = 'C'::text) OR ((tipo_devolucion_iva)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__014" directorySegmentName="seg_1" id="6B7A7C86-51AE-6E53-4587-58D730523AEA">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_retencion)::text = 'C'::text) OR ((tipo_retencion)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="avcon_1138898359_tipo__008" directorySegmentName="seg_1" id="632B96F2-1A61-0214-B3D7-A566F8480CF4">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:14:50 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((tipo_costo)::text = 'C'::text) OR ((tipo_costo)::text = 'D'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

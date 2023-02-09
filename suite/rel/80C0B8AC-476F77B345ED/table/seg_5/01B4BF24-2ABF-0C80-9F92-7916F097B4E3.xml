@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_5" id="01B4BF24-2ABF-0C80-9F92-7916F097B4E3" schemaObject="4996015A-2053-30D5-BD5A-1522554E1A37" name="puntos_tipos_modalidades">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>puntos_tipos_modalidades</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="punto" id="2EFC8F90-601C-3387-691B-6748BE7F9C3B">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>puntos_tipos_modalidades</sourceObjSchema>
+<sourceObjName>punto</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="409CD697-1FCA-DF18-D718-10416BA5CB83" referredColumn="AD812BCE-DAE4-1FD3-4422-915D9F322E4A"/>
+</associations>
+</Column>
+<Column name="tipo_modalidad" id="C6FE7A18-314C-94CA-D423-93E2EA6FE361">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>puntos_tipos_modalidades</sourceObjSchema>
+<sourceObjName>tipo_modalidad</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7B6EEE9-6195-7C08-005B-FB6C3445F9D4" referredColumn="4138A748-C19B-8543-D9EA-CED8EF1932BB"/>
+</associations>
+</Column>
+<Column name="fecha_insercion" id="539477A8-3DE1-D434-B299-2615F78FDB1A">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>puntos_tipos_modalidades</sourceObjSchema>
+<sourceObjName>fecha_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>now()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_insercion" id="3FE62AA6-F5CA-16D2-9EEC-76C406000F99">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>puntos_tipos_modalidades</sourceObjSchema>
+<sourceObjName>usuario_insercion</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interfaz" id="98A5BE39-D19B-7531-85AF-2D6E8040C84E">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>puntos_tipos_modalidades</sourceObjSchema>
+<sourceObjName>interfaz</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>(&apos;N&apos;::character varying)::decision_n_s</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oid" id="B8A89D61-C1EC-09FF-48A0-0996650EA27F">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>puntos_tipos_modalidades</sourceObjSchema>
+<sourceObjName>oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>nextval(&apos;puntos_tipos_modalidades_oid_seq&apos;::regclass)</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60E560CD-7395-1036-2D15-E6E4A16B9CF2" name="punt_timo_pk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>punt_timo_pk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFC8F90-601C-3387-691B-6748BE7F9C3B"/>
+<colUsage columnID="C6FE7A18-314C-94CA-D423-93E2EA6FE361"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E2C51FF-8D21-298D-59D9-DBE00764AFF0" name="puntos_tipos_modalidades_oid">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>puntos_tipos_modalidades_oid</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8A89D61-C1EC-09FF-48A0-0996650EA27F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFC2B2BE-A768-56BD-D599-37598739CAC4" name="punt_timo_punt_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>punt_timo_punt_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFC8F90-601C-3387-691B-6748BE7F9C3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D32E870-47B1-FEEA-3CEB-E7C66E4F3718" name="punt_timo_tipo_moda_fk">
+<sourceConnName>postgres</sourceConnName>
+<sourceObjSchema>public</sourceObjSchema>
+<sourceObjName>punt_timo_tipo_moda_fk</sourceObjName>
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6FE7A18-314C-94CA-D423-93E2EA6FE361"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E594BA3-FFFA-9D62-81B6-7BDC67500205" name="punt_timo_punt_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:04 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFC8F90-601C-3387-691B-6748BE7F9C3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A389C3C-5A0B-9194-0C40-0BA9794ADF81" name="punt_timo_tipo_moda_fk">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:16:04 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6FE7A18-314C-94CA-D423-93E2EA6FE361"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="punt_timo_usin_ck" directorySegmentName="seg_17" id="CC7BF6D9-4DDB-4A5B-58A9-2000B3D17249">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((usuario_insercion)::text <> ''::text) AND ((usuario_insercion)::text <> '.'::text)))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="punt_timo_inte_ck" directorySegmentName="seg_17" id="1757BED1-5DAC-7CD8-0CA0-7996CF19CD45">
+<createdBy>systech59</createdBy>
+<createdTime>2023-02-07 03:15:34 UTC</createdTime>
+<ownerDesignName>suite</ownerDesignName>
+<rule><![CDATA[((((interfaz)::text = 'N'::text) OR ((interfaz)::text = 'S'::text)))]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

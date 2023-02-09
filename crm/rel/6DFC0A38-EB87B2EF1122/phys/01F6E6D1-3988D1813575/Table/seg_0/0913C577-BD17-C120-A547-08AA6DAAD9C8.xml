@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="usuarios" directorySegmentName="seg_0" id="0913C577-BD17-C120-A547-08AA6DAAD9C8">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_usuario" id="08181C74-518C-6B7B-F26F-BD4C14E26FD0">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="usuario" id="2BD01809-970A-AF11-F7A7-E83941274B4E">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_usuario_modificacion" id="3CC79381-A5D4-4530-0EC4-B3AFE44A4B0F">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_persona" id="701D63FA-DCC0-B083-D54A-EB425FBDDBA9">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_perfil" id="85A6EECC-C9CD-46A4-9409-1C67AD936AE2">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_modificacion" id="8C918421-CBB0-8B89-2A84-930704007908">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<defaultValue>now()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="activo" id="8D51ED68-C104-AC79-37EF-3EBE262EBEA0">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="fecha_insercion" id="905E55EB-C738-8CC5-0BD8-A51CFE6807A1">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<defaultValue>now()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="contrasena" id="927A4AE6-CD96-32E6-86CA-15FDFD2B03D4">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_usuario_insercion" id="CEE8EA7B-AAAC-F56A-CDFC-401E8B42B8E3">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="usuarios__IDX" id="C3F080D0-4A8E-D177-DE96-765305357DA2">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:19:48 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="usuarios_usuarios_FK" id="3F00E157-7308-B9EA-FBDA-4E63C22C253C">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:58:08 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="usuarios_usuarios_FKv1" id="5784B73B-ACE7-D33C-27C1-25252305325F">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:58:27 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="usuarios_personas_FK" id="E8729274-9677-669F-DD41-7DFA66464EB9">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:54:17 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="usuarios_perfiles_FK" id="EAAC8DF6-CF35-92C6-D0E5-D5054210CE8D">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 00:50:01 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="usuarios_pk" id="B01A1360-F360-3CD3-2037-1D1F5652C8C9">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="usuarios__UN" id="604756F2-D3F1-2AA4-034E-AAADE29F40FF">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:46:54 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

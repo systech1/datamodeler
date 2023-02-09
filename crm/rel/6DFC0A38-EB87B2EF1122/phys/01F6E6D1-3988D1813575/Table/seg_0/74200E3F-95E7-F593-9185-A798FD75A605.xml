@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="registros_archivos" directorySegmentName="seg_0" id="74200E3F-95E7-F593-9185-A798FD75A605">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_usuario_insercion" id="1E4E3C6A-CBB8-6522-5F19-D8C982E08E2C">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="secuencia" id="3DAAB43C-B0AE-8158-E7A5-A5CF00C1D896">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-26 00:37:51 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="archivo" id="57C0A832-8F7D-5EFA-1D30-E9D415D726DF">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="texto" id="8DAECE8B-3635-52D8-8C9C-B912F8D493FA">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_insercion" id="93836A14-FACF-F065-334D-E93BDF8BA51B">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<defaultValue>datetime</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="id_registro" id="9FDA2449-C311-BABC-DF46-B3C3E1049B1B">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_modificacion" id="E492E967-6BD5-C2BE-A72F-B09A8BB8D444">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<defaultValue>datetime</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="id_usuario_modificacion" id="E97D62CF-9FD0-91F1-1194-3EC9EC63F402">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_registro_archivo" id="F0792AA1-D2FA-27D8-5531-4E1CAC6CCF0C">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="registros_archivos_registros_FK" id="46D000DB-60CE-8E95-11F4-3DB2E8840330">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-26 00:39:06 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="registros_archivos_usuarios_FKv1" id="E1115741-7D1B-B566-7819-07372A2410A0">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 01:23:42 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="registros_archivos_usuarios_FK" id="E37CDC95-98A0-9604-F748-88783426587B">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-21 01:23:34 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="registros_archivos_pk" id="7E41ECC7-847B-7C92-225C-63EB61709269">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-17 01:10:25 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="registros_archivos__UN" id="EC61CB06-3D89-F0FC-3EA7-9A6F899218DA">
+<createdBy>systech59</createdBy>
+<createdTime>2022-06-26 00:25:48 UTC</createdTime>
+<ownerDesignName>crm</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>
